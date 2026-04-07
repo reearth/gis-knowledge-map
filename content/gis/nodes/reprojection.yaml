@@ -1,0 +1,151 @@
+id: reprojection
+title: Coordinate Reprojection
+aliases: []
+
+type: spatial-reference-systems
+parentNode: spatial-reference-systems-group
+difficulty: advanced
+importance: critical
+estimatedTime: 50 minutes
+
+summary: Reprojection (or coordinate transformation) is the process of converting spatial data from one coordinate reference system (CRS) to another.
+description: >
+  Reprojection (or coordinate transformation) is the process of converting spatial data from one coordinate reference system (CRS) to another. This involves changing the underlying datum, projection, or both. Reprojection is essential for integrating datasets with different CRS, displaying data on web maps, and performing accurate spatial analysis. Understanding reprojection workflows, tools, and potential accuracy issues is critical for reliable geospatial work.
+
+style:
+  color: "#10B981"
+  icon: "arrows-left-right"
+
+topics:
+  - Geographic-to-geographic transformations (datum shifts)
+  - Geographic-to-projected transformations
+  - Projected-to-projected transformations
+  - Transformation methods (grid-based, Helmert, Molodensky)
+  - Reprojection accuracy and error propagation
+  - Vector vs raster reprojection considerations
+  - On-the-fly reprojection in GIS software
+  - Pipeline transformations for complex CRS conversions
+
+prerequisites:
+  - crs
+  - datum
+  - map-projection
+  - coordinate-systems
+
+relationships:
+  related:
+    - epsg-codes
+    - wgs84
+    - utm
+    - web-mercator
+
+learningOutcomes:
+  - Reproject vector and raster datasets using GIS tools
+  - Choose appropriate transformation methods and parameters
+  - Understand accuracy implications of reprojection
+  - Handle on-the-fly reprojection in mapping applications
+  - Troubleshoot common reprojection errors and artifacts
+
+roleRelevance:
+  gis-developer: 1.0
+  gis-analyst: 1.0
+  geospatial-data-scientist: 0.9
+  remote-sensing-specialist: 0.9
+  cartographer: 0.8
+
+resources:
+  - title: "PROJ - Coordinate Transformation"
+    url: "https://proj.org/operations/transformations/index.html"
+    type: reference
+  - title: "GDAL Coordinate Transformation"
+    url: "https://gdal.org/tutorials/osr_api_tut.html"
+    type: reference
+  - title: "Reprojecting Data - QGIS"
+    url: "https://docs.qgis.org/latest/en/docs/user_manual/processing_algs/qgis/vectorgeneral.html#reproject-layer"
+    type: documentation
+  - title: "gdalwarp Tutorial - Raster Reprojection"
+    url: "https://gdal.org/programs/gdalwarp.html"
+    type: tutorial
+  - title: "ogr2ogr Tutorial - Vector Reprojection"
+    url: "https://gdal.org/programs/ogr2ogr.html"
+    type: tutorial
+  - title: "Reprojection in Python (pyproj, geopandas)"
+    url: "https://geopandas.org/en/stable/docs/user_guide/projections.html"
+    type: tutorial
+  - title: "Coordinate Transformation and Reprojection"
+    url: "https://www.youtube.com/watch?v=Z41Dt7_R180"
+    type: video
+
+practicalExercises:
+  - Reproject a shapefile from EPSG:4326 to EPSG:3857 using QGIS
+  - Use gdalwarp to reproject raster data with different resampling methods
+  - Transform coordinates between NAD83 and WGS84 with datum shift parameters
+  - Compare reprojection results using different transformation methods
+  - Fix misaligned layers by identifying and correcting CRS issues
+
+commonMistakes:
+  - Reprojecting without understanding source/target CRS
+  - Ignoring datum transformation parameters (using wrong or no shift grids)
+  - Using inappropriate resampling for raster reprojection
+  - Repeatedly reprojecting data (accumulating errors)
+  - Not checking transformation accuracy and warnings
+  - Assuming on-the-fly reprojection equals proper data reprojection
+
+realWorldApplications:
+  - Integrating GPS data (WGS84) with local mapping data
+  - Preparing data for web mapping (converting to EPSG:3857)
+  - Combining datasets from different countries or agencies
+  - Converting between UTM zones for regional analysis
+  - Aerial/satellite imagery orthorectification and georeferencing
+
+tools:
+  gdalwarp:
+    description: "Raster reprojection with resampling"
+    example: "gdalwarp -s_srs EPSG:4326 -t_srs EPSG:3857 -r bilinear input.tif output.tif"
+  ogr2ogr:
+    description: "Vector reprojection and format conversion"
+    example: "ogr2ogr -s_srs EPSG:4326 -t_srs EPSG:32610 output.shp input.shp"
+  QGIS:
+    description: "Reproject Layer tool and on-the-fly reprojection"
+    location: "Processing Toolbox > Vector general > Reproject layer"
+  pyproj:
+    description: "Python library for coordinate transformation"
+    example: "transformer = Transformer.from_crs('EPSG:4326', 'EPSG:3857')"
+  PROJ:
+    description: "Core coordinate transformation library"
+    example: "echo 2 49 | cs2cs EPSG:4326 EPSG:32632"
+
+advancedTopics:
+  - Grid-based datum transformations (NTv2, NADCON5)
+  - Transformation pipelines and multi-step conversions
+  - Time-dependent transformations for plate tectonics
+  - Accuracy assessment and uncertainty propagation
+  - Custom transformation grids for local datums
+  - Raster resampling methods (nearest, bilinear, cubic, Lanczos)
+  - Edge effects and null values in reprojected rasters
+
+bestPractices:
+  - Always verify source CRS before reprojection
+  - Use appropriate transformation methods and accuracy
+  - Reproject to target CRS once (avoid multiple transformations)
+  - Document CRS and transformation parameters in metadata
+  - Test reprojection with known control points
+  - Use high-quality resampling for raster data
+  - Preserve original data and work on copies
+
+performanceConsiderations:
+  - On-the-fly reprojection is slower than pre-reprojected data
+  - Raster reprojection is computationally intensive
+  - Vector reprojection is generally fast
+  - Use appropriate file formats (GeoTIFF, GeoPackage) for better performance
+
+tags:
+  - coordinate-transformation
+  - projection
+  - datum-shift
+  - gdal
+  - proj
+  - spatial-data-processing
+  - crs-conversion
+
+lastUpdated: "2026-04-07"

@@ -1,0 +1,43 @@
+id: tile-delivery-systems-group
+title: Tile & Delivery Systems
+aliases: [Tile Systems, Map Tiles, Tiling]
+
+type: tile-delivery-systems
+difficulty: intermediate
+importance: important
+isGroup: true
+
+summary: Systems and protocols for efficiently delivering map imagery and vector data as tiles.
+description: |
+  Tile delivery systems break maps into small, cacheable tiles for efficient web delivery.
+  This includes raster tile schemes (XYZ, TMS), vector tiles (MVT), and related technologies
+  like tile caching and CDN delivery. Tiling is fundamental to modern web mapping performance,
+  enabling fast, scalable map rendering by pre-generating or dynamically serving small
+  map sections that can be cached and reused.
+
+style:
+  color: "#F59E0B"
+  icon: "grid-3x3"
+
+relationships:
+  prerequisites:
+    - spatial-reference-systems-group
+    - gis-servers-services-group
+  enables:
+    - web-mapping-libraries-group
+    - cloud-gis-platforms-group
+
+tags: [tiles, caching, performance, delivery]
+keywords: [xyz, tms, mvt, vector-tiles, raster-tiles, cdn]
+
+roleRelevance:
+  gis-analyst: 0.5
+  gis-developer: 1.0
+  data-engineer: 0.9
+
+resources:
+  - title: "Slippy Map Tilenames"
+    url: "https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames"
+    type: reference
+
+lastUpdated: "2026-04-07"

@@ -1,0 +1,48 @@
+id: sar
+title: SAR
+aliases: [Synthetic Aperture Radar, Radar Imaging]
+
+type: remote-sensing
+parentNode: remote-sensing-group
+difficulty: advanced
+importance: important
+
+summary: Active microwave imaging that penetrates clouds and darkness for all-weather Earth observation.
+description: |
+  Synthetic Aperture Radar (SAR) is an active remote sensing technique using microwave
+  radiation to create images regardless of clouds, darkness, or weather. Unlike optical
+  sensors, SAR provides its own illumination and penetrates cloud cover.
+
+  Major SAR missions: Sentinel-1 (free, C-band), RADARSAT, TerraSAR-X, ALOS PALSAR.
+  Applications: flood monitoring, ship detection, ice monitoring, ground deformation
+  (InSAR), soil moisture. Requires specialized processing (complex data, speckle filtering).
+  Essential for tropical/cloudy regions and emergency response.
+
+style:
+  color: "#0EA5E9"
+  icon: "wave-square"
+
+relationships:
+  related:
+    - satellite-imagery
+    - change-detection
+  enables:
+    - geotiff
+
+tags: [remote-sensing, radar, sar, all-weather, microwave, active-sensing]
+keywords: [sar, radar, sentinel-1, insar, all-weather, microwave-imaging, interferometry]
+
+roleRelevance:
+  gis-analyst: 0.8
+  data-engineer: 0.7
+  gis-developer: 0.6
+
+resources:
+  - title: "ESA Sentinel-1 SAR User Guide"
+    url: "https://sentinels.copernicus.eu/web/sentinel/user-guides/sentinel-1-sar"
+    type: documentation
+  - title: "Introduction to SAR"
+    url: "https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar"
+    type: tutorial
+
+lastUpdated: "2026-04-07"

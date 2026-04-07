@@ -1,0 +1,47 @@
+id: shapely
+title: Shapely
+aliases: []
+
+type: analysis-libraries
+parentNode: analysis-libraries-group
+difficulty: intermediate
+importance: critical
+
+summary: A Python library for manipulation and analysis of planar geometric objects (points, lines, polygons).
+description: |
+  Shapely is a Python package for geometric manipulation and analysis based on the GEOS library
+  (the C++ port of JTS). It provides a Pythonic interface to geometric operations.
+
+  Supports creation, validation, and manipulation of geometric objects following the OGC
+  Simple Features specification. Includes operations like buffer, union, intersection,
+  difference, and spatial predicates. Foundation library for GeoPandas and many Python GIS tools.
+
+style:
+  color: "#06B6D4"
+  icon: "function-square"
+
+relationships:
+  prerequisites:
+    - geometry
+  related:
+    - geopandas
+  enables:
+    - geojson
+
+tags: [python, geometry, geos, spatial-operations, ogc]
+keywords: [buffer, union, intersection, polygon, geometry, geos, spatial-predicates]
+
+roleRelevance:
+  gis-developer: 1.0
+  gis-analyst: 0.9
+  data-engineer: 1.0
+
+resources:
+  - title: "Shapely Documentation"
+    url: "https://shapely.readthedocs.io/"
+    type: documentation
+  - title: "Shapely User Manual"
+    url: "https://shapely.readthedocs.io/en/stable/manual.html"
+    type: reference
+
+lastUpdated: "2026-04-07"

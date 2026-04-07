@@ -1,0 +1,50 @@
+id: pdal
+title: PDAL
+aliases: [Point Data Abstraction Library, PDAL library]
+
+type: processing-tools
+parentNode: processing-tools-group
+difficulty: advanced
+importance: important
+
+summary: Point cloud data processing library for translating, filtering, and manipulating point cloud formats.
+description: |
+  PDAL (Point Data Abstraction Library) is a C++ library and command-line toolset for translating
+  and processing point cloud data. Often described as "GDAL for point clouds," PDAL provides a
+  unified interface for working with LiDAR and other 3D point data formats.
+
+  PDAL supports sophisticated processing pipelines for tasks like filtering, classification,
+  ground detection, and format conversion. It handles formats including LAS/LAZ, E57, and PLY,
+  and integrates with PostgreSQL/PostGIS through the pgpointcloud extension.
+
+style:
+  color: "#14B8A6"
+  icon: "tool"
+
+relationships:
+  similarTo:
+    - gdal
+  supports:
+    - las
+    - laz
+  integrates:
+    - postgis
+    - entwine
+
+tags: [point-cloud, lidar, processing, open-source]
+keywords: [lidar processing, point cloud, las, laz, 3d data, classification]
+
+roleRelevance:
+  gis-developer: 0.8
+  data-engineer: 0.9
+  remote-sensing-specialist: 1.0
+
+resources:
+  - title: "PDAL Documentation"
+    url: "https://pdal.io/"
+    type: documentation
+  - title: "PDAL GitHub"
+    url: "https://github.com/PDAL/PDAL"
+    type: reference
+
+lastUpdated: "2026-04-07"

@@ -1,0 +1,49 @@
+id: georeferencing
+title: Georeferencing
+aliases: []
+
+type: core-concepts
+parentNode: core-concepts-group
+difficulty: intermediate
+importance: important
+
+summary: The process of aligning imagery, scanned maps, or other spatial data to real-world coordinates by establishing the relationship between image coordinates and ground coordinates.
+description: |
+  The process of aligning imagery, scanned maps, or other spatial data to real-world coordinates by establishing the relationship between image coordinates and ground coordinates. This involves identifying control points and applying geometric transformations to position data accurately in geographic space.
+
+style:
+  color: "#64748B"
+  icon: "map"
+
+relationships:
+  appliesTo:
+    - raster-data
+  uses:
+    - coordinate-reference-system
+  improves:
+    - accuracy
+
+tags:
+  - coordinate-transformation
+  - imagery
+  - spatial-alignment
+keywords:
+  - georeferencing
+  - control points
+  - transformation
+  - rectification
+  - spatial alignment
+  - ground truth
+
+roleRelevance:
+  gis-analyst: 0.9
+  gis-developer: 0.8
+  cartographer: 0.9
+resources:
+  - title: Georeferencing in GIS
+    url: https://docs.qgis.org/latest/en/docs/
+    type: tutorial
+  - title: Georeferencing Fundamentals
+    url: https://www.esri.com/en-us/what-is-gis/overview
+    type: documentation
+lastUpdated: "2026-04-07"

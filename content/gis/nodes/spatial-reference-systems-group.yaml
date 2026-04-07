@@ -1,0 +1,43 @@
+id: spatial-reference-systems-group
+title: Spatial Reference Systems
+aliases: [Coordinate Systems, CRS, Projections]
+
+type: spatial-reference-systems
+difficulty: intermediate
+importance: critical
+isGroup: true
+
+summary: Systems for defining how spatial data relates to locations on Earth's surface.
+description: |
+  Spatial Reference Systems (SRS) are essential for accurately positioning geographic data.
+  They define how coordinates relate to real-world locations through coordinate reference systems,
+  datums, and map projections. Understanding SRS is critical for proper spatial analysis,
+  coordinate transformation, and integration of data from different sources.
+
+style:
+  color: "#10B981"
+  icon: "compass"
+
+relationships:
+  prerequisites:
+    - core-concepts-group
+  enables:
+    - data-models-group
+    - data-formats-group
+    - processing-tools-group
+
+tags: [coordinates, projection, datum, crs]
+keywords: [WGS84, EPSG, transformation, reprojection]
+
+roleRelevance:
+  gis-analyst: 1.0
+  gis-developer: 1.0
+  cartographer: 1.0
+  data-engineer: 0.9
+
+resources:
+  - title: "Understanding Coordinate Systems"
+    url: "https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/coordinate_reference_systems.html"
+    type: tutorial
+
+lastUpdated: "2026-04-07"

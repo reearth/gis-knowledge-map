@@ -1,0 +1,48 @@
+id: ogc-api-features
+title: OGC API - Features
+aliases: [WFS 3.0, OGC Features API]
+
+type: gis-servers-services
+parentNode: gis-servers-services-group
+difficulty: intermediate
+importance: important
+
+summary: Modern RESTful API standard replacing WFS for accessing and querying vector features.
+description: |
+  OGC API - Features is a modern, web-friendly standard for accessing vector geospatial
+  features. It replaces WFS with a RESTful architecture using JSON, HTML, and standard
+  HTTP methods, making it easier to use than traditional XML-based OGC services.
+
+  Built on OpenAPI, supports GeoJSON and HTML responses, pagination, CQL2 filtering,
+  and simple URLs. Part of the OGC API family modernizing geospatial standards. Growing
+  support in GeoServer, pygeoapi, and other servers.
+
+style:
+  color: "#F97316"
+  icon: "api"
+
+relationships:
+  prerequisites:
+    - geojson
+  related:
+    - wfs
+  enables:
+    - geoserver
+
+tags: [ogc, api, rest, modern, geojson, features]
+keywords: [ogc-api, restful, openapi, geojson, wfs-replacement, cql2, filtering]
+
+roleRelevance:
+  gis-developer: 1.0
+  data-engineer: 0.9
+  gis-analyst: 0.5
+
+resources:
+  - title: "OGC API - Features Specification"
+    url: "https://ogcapi.ogc.org/features/"
+    type: documentation
+  - title: "OGC API - Features Overview"
+    url: "https://www.ogc.org/standards/ogcapi-features"
+    type: reference
+
+lastUpdated: "2026-04-07"

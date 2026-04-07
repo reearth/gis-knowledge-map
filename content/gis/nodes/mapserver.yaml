@@ -1,0 +1,49 @@
+id: mapserver
+title: MapServer
+aliases: [UMN MapServer]
+
+type: gis-servers-services
+parentNode: gis-servers-services-group
+difficulty: advanced
+importance: important
+
+summary: Open-source platform for publishing spatial data and interactive mapping applications using OGC standards.
+description: |
+  MapServer is a popular open-source platform for publishing spatial data to the web.
+  Originally developed by the University of Minnesota, it's written in C for high performance
+  and supports all major OGC web service standards.
+
+  Supports WMS, WFS, WCS, WMS-T (time-enabled), SOS, and Filter Encoding. Uses mapfiles
+  for configuration, supports multiple data sources (PostGIS, Shapefile, raster formats),
+  and provides powerful cartographic styling. Fast, stable, and widely deployed.
+
+style:
+  color: "#F97316"
+  icon: "server"
+
+relationships:
+  related:
+    - geoserver
+    - postgis
+  enables:
+    - wms
+    - wfs
+    - wcs
+
+tags: [server, ogc, open-source, c-language, web-services]
+keywords: [mapserver, mapfile, ogc-standards, wms, wfs, cartography, umn]
+
+roleRelevance:
+  gis-developer: 0.9
+  data-engineer: 0.8
+  gis-analyst: 0.4
+
+resources:
+  - title: "MapServer Documentation"
+    url: "https://mapserver.org/documentation.html"
+    type: documentation
+  - title: "MapServer Official Site"
+    url: "https://mapserver.org/"
+    type: reference
+
+lastUpdated: "2026-04-07"

@@ -1,0 +1,47 @@
+id: turf
+title: Turf.js
+aliases: [Turf, TurfJS]
+
+type: analysis-libraries
+parentNode: analysis-libraries-group
+difficulty: intermediate
+importance: critical
+
+summary: A JavaScript library for spatial analysis that works in the browser and Node.js with GeoJSON data.
+description: |
+  Turf.js is a modular geospatial analysis library that performs spatial operations in JavaScript.
+  It provides tools for measurement, transformation, classification, interpolation, and more.
+
+  Works entirely with GeoJSON, runs in browser and Node.js, and includes 100+ spatial operations
+  like buffer, union, intersection, distance calculations, and statistical analysis.
+
+style:
+  color: "#06B6D4"
+  icon: "function-square"
+
+relationships:
+  related:
+    - gdal
+  enables:
+    - geojson
+    - leaflet
+    - mapbox-gl
+    - openlayers
+
+tags: [javascript, spatial-analysis, geojson, browser, node, open-source]
+keywords: [buffer, intersection, union, distance, measurement, polygon, modular]
+
+roleRelevance:
+  gis-developer: 1.0
+  gis-analyst: 0.7
+  data-engineer: 0.8
+
+resources:
+  - title: "Turf.js Documentation"
+    url: "https://turfjs.org/"
+    type: documentation
+  - title: "Turf.js API Reference"
+    url: "https://turfjs.org/docs/"
+    type: reference
+
+lastUpdated: "2026-04-06"

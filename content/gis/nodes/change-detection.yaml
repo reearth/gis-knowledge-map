@@ -1,0 +1,49 @@
+id: change-detection
+title: Change Detection
+aliases: [Temporal Analysis, Multi-temporal Analysis, Time Series Analysis]
+
+type: remote-sensing
+parentNode: remote-sensing-group
+difficulty: advanced
+importance: critical
+
+summary: Identifying and analyzing changes between imagery captured at different times for monitoring environmental and urban dynamics.
+description: |
+  Change detection analyzes multi-temporal imagery to identify, quantify, and characterize
+  changes in land cover, vegetation, urban areas, water bodies, and other features over time.
+  Critical for monitoring deforestation, urban growth, disaster impacts, and environmental change.
+
+  Methods include image differencing, ratio methods, classification comparison (post-classification
+  comparison), advanced algorithms (CVA, MAD, deep learning). Requires co-registered imagery,
+  atmospheric correction, and careful temporal alignment. Time-series analysis (LandTrendr, BFAST)
+  detects trends and breakpoints. Google Earth Engine excels at large-scale change detection.
+
+style:
+  color: "#0EA5E9"
+  icon: "calendar-clock"
+
+relationships:
+  prerequisites:
+    - satellite-imagery
+    - image-classification
+  related:
+    - google-earth-engine
+    - spectral-analysis
+
+tags: [remote-sensing, temporal-analysis, monitoring, time-series, environmental-change]
+keywords: [change-detection, temporal-analysis, deforestation, urban-growth, time-series, landtrendr, bfast]
+
+roleRelevance:
+  gis-analyst: 1.0
+  data-engineer: 0.7
+  gis-developer: 0.7
+
+resources:
+  - title: "Change Detection in Earth Engine"
+    url: "https://developers.google.com/earth-engine/tutorials/tutorial_forest_02"
+    type: tutorial
+  - title: "Change Detection Methods"
+    url: "https://gsp.humboldt.edu/olm/Courses/GSP_216/lessons/change.html"
+    type: documentation
+
+lastUpdated: "2026-04-07"

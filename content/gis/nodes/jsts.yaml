@@ -1,0 +1,48 @@
+id: jsts
+title: JSTS
+aliases: [JavaScript Topology Suite, JSTS Topology Suite]
+
+type: analysis-libraries
+parentNode: analysis-libraries-group
+difficulty: intermediate
+importance: important
+
+summary: A JavaScript port of the Java Topology Suite (JTS) for geometric operations and spatial predicates.
+description: |
+  JSTS (JavaScript Topology Suite) is a JavaScript library of spatial predicates and functions
+  for processing geometry. It's a port of the well-established Java Topology Suite (JTS).
+
+  Provides robust geometric operations including buffer, union, intersection, difference,
+  spatial predicates (contains, intersects, touches), and topology validation. Works with
+  planar geometry and implements the OGC Simple Features Specification.
+
+style:
+  color: "#06B6D4"
+  icon: "function-square"
+
+relationships:
+  related:
+    - turf
+    - shapely
+  enables:
+    - geojson
+    - openlayers
+    - leaflet
+
+tags: [javascript, topology, geometry, spatial-operations, jts-port]
+keywords: [buffer, union, intersection, topology, validation, spatial-predicates, planar-geometry]
+
+roleRelevance:
+  gis-developer: 1.0
+  gis-analyst: 0.6
+  data-engineer: 0.7
+
+resources:
+  - title: "JSTS GitHub Repository"
+    url: "https://github.com/bjornharrtell/jsts"
+    type: reference
+  - title: "JTS Topology Suite (Original Java Library)"
+    url: "https://github.com/locationtech/jts"
+    type: documentation
+
+lastUpdated: "2026-04-07"

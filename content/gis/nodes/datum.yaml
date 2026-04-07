@@ -1,0 +1,109 @@
+id: datum
+title: Geodetic Datum
+aliases: []
+
+type: spatial-reference-systems
+parentNode: spatial-reference-systems-group
+difficulty: advanced
+importance: critical
+estimatedTime: 50 minutes
+
+summary: A geodetic datum is a reference surface (typically an ellipsoid) and a coordinate system used to define positions on Earth.
+description: >
+  A geodetic datum is a reference surface (typically an ellipsoid) and a coordinate system used to define positions on Earth. It provides the foundation for measuring locations by approximating Earth's irregular shape. Different datums can result in position differences of hundreds of meters for the same coordinates, making datum understanding crucial for accurate geospatial work.
+
+style:
+  color: "#10B981"
+  icon: "globe"
+
+topics:
+  - Ellipsoid models of Earth (sphere vs ellipsoid)
+  - Horizontal datums (NAD83, WGS84, ETRS89)
+  - Vertical datums (mean sea level, geoid models)
+  - Local vs global datums
+  - Datum transformations and shift parameters
+  - Geoid vs ellipsoid relationship
+
+prerequisites:
+  - basic-gis-concepts
+  - coordinate-systems
+  - crs
+
+relationships:
+  related:
+    - wgs84
+    - crs
+    - map-projection
+    - reprojection
+
+learningOutcomes:
+  - Distinguish between ellipsoid, geoid, and actual Earth surface
+  - Understand why different datums exist and when to use each
+  - Recognize datum-related positional errors
+  - Apply datum transformations correctly
+  - Select appropriate datums for regional vs global projects
+
+roleRelevance:
+  gis-analyst: 0.9
+  gis-developer: 0.9
+  surveyor: 1.0
+  geodesist: 1.0
+  remote-sensing-specialist: 0.8
+  geospatial-data-scientist: 0.7
+
+resources:
+  - title: "Geodetic Datums - NOAA"
+    url: "https://geodesy.noaa.gov/datums/"
+    type: reference
+  - title: "Understanding Geodetic Datums - GeoNet"
+    url: "https://www.geodesy.linz.govt.nz/learn/understanding-geodetic-datums"
+    type: tutorial
+  - title: "PROJ Datum Documentation"
+    url: "https://proj.org/operations/conversions/geodetic.html"
+    type: reference
+  - title: "Datums and Coordinate Systems - Esri"
+    url: "https://desktop.arcgis.com/en/arcmap/latest/map/projections/datums.htm"
+    type: tutorial
+  - title: "WGS84 vs NAD83: What's the Difference?"
+    url: "https://www.esri.com/arcgis-blog/products/arcgis-pro/mapping/wgs84-vs-nad83/"
+    type: tutorial
+  - title: "Geodetic Datums Explained"
+    url: "https://www.youtube.com/watch?v=xKGlMp__jog"
+    type: video
+
+practicalExercises:
+  - Compare coordinate values for the same location in different datums (WGS84 vs NAD83)
+  - Visualize datum shift by overlaying datasets with different datums
+  - Apply datum transformation parameters using GDAL or PROJ
+  - Calculate positional errors caused by datum misidentification
+
+commonMistakes:
+  - Treating datums as interchangeable
+  - Confusing datum with projection
+  - Ignoring datum when only CRS is mentioned
+  - Using outdated datum realizations
+  - Not accounting for datum transformations in analysis
+
+realWorldApplications:
+  - GPS data (WGS84) integration with national mapping data (NAD83, ETRS89)
+  - Surveying and cadastral mapping using local datums
+  - Historical data using superseded datums (NAD27)
+  - Maritime navigation with chart datums
+  - Elevation modeling with vertical datums
+
+advancedTopics:
+  - Datum transformation methods (Helmert, Molodensky, grid-based)
+  - Time-dependent datums and plate tectonics
+  - Datum ensemble and accuracy considerations
+  - EGM96, EGM2008 geoid models
+
+tags:
+  - geodesy
+  - ellipsoid
+  - geoid
+  - coordinate-systems
+  - reference-frame
+  - wgs84
+  - nad83
+
+lastUpdated: "2026-04-07"

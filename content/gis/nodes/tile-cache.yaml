@@ -1,0 +1,50 @@
+id: tile-cache
+title: Tile Cache
+aliases: [TileCache, MapProxy, Tile Caching]
+
+type: tile-delivery-systems
+parentNode: tile-delivery-systems-group
+difficulty: intermediate
+importance: important
+
+summary: Server-side caching systems for pre-generating and storing map tiles to improve performance.
+description: |
+  Tile caching systems pre-generate and store map tiles to avoid repeated rendering,
+  dramatically improving map delivery performance. Popular implementations include
+  MapProxy, TileCache, GeoWebCache, and mod_tile.
+
+  Supports seeding (pre-generation), on-demand caching, cache expiration, and multiple
+  backends (filesystem, S3, Redis). Can cache both raster and vector tiles. Essential
+  for high-traffic map services and reducing server load.
+
+style:
+  color: "#F59E0B"
+  icon: "server-cog"
+
+relationships:
+  prerequisites:
+    - raster-tiles
+  related:
+    - cdn-delivery
+    - geoserver
+  enables:
+    - xyz-tiles
+    - tms
+
+tags: [caching, performance, tiles, server, optimization]
+keywords: [mapproxy, tilecache, geowebcache, seeding, cache-expiration, tile-storage]
+
+roleRelevance:
+  gis-developer: 0.9
+  data-engineer: 1.0
+  gis-analyst: 0.3
+
+resources:
+  - title: "MapProxy Documentation"
+    url: "https://mapproxy.org/docs/latest/"
+    type: documentation
+  - title: "GeoWebCache User Manual"
+    url: "https://www.geowebcache.org/docs/current/"
+    type: reference
+
+lastUpdated: "2026-04-07"

@@ -1,0 +1,49 @@
+id: vector-data
+title: Vector Data
+aliases: []
+
+type: core-concepts
+parentNode: core-concepts-group
+difficulty: beginner
+importance: critical
+
+summary: Discrete geographic features represented as points, lines, and polygons using coordinate geometry.
+description: |
+  Discrete geographic features represented as points, lines, and polygons using coordinate geometry. Vector data is ideal for representing distinct objects with well-defined boundaries, such as roads, buildings, parcels, and administrative boundaries. Each feature has geometry and associated attributes.
+
+style:
+  color: "#64748B"
+  icon: "triangle"
+
+relationships:
+  alternativeTo:
+    - raster-data
+  contains:
+    - feature
+  uses:
+    - geometry
+    - topology
+
+tags:
+  - data-model
+  - geometry
+  - features
+keywords:
+  - vector
+  - points
+  - lines
+  - polygons
+  - discrete features
+
+roleRelevance:
+  gis-analyst: 1.0
+  gis-developer: 1.0
+  cartographer: 1.0
+resources:
+  - title: Vector Data Model
+    url: https://www.esri.com/en-us/what-is-gis/overview
+    type: documentation
+  - title: Introduction to Vector GIS Data
+    url: https://docs.qgis.org/latest/en/docs/
+    type: tutorial
+lastUpdated: "2026-04-07"

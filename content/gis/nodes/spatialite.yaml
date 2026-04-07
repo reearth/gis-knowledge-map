@@ -1,0 +1,48 @@
+id: spatialite
+title: SpatiaLite
+aliases: [Spatial SQLite]
+
+type: spatial-databases
+parentNode: spatial-databases-group
+difficulty: intermediate
+importance: important
+
+summary: SQLite extension adding spatial capabilities - a lightweight alternative to PostGIS for embedded applications.
+description: |
+  SpatiaLite extends SQLite with comprehensive spatial data support, providing a complete
+  spatial database in a single file. Often described as "PostGIS for SQLite," it implements
+  OGC standards and most PostGIS-like functions.
+
+  Supports geometry types, spatial indexing (R-Tree), coordinate transformations, and
+  hundreds of spatial functions. Perfect for mobile applications, embedded systems, and
+  single-user desktop GIS. Used by QGIS, GDAL, and many mobile mapping apps. No server required.
+
+style:
+  color: "#A855F7"
+  icon: "database"
+
+relationships:
+  related:
+    - postgis
+    - qgis
+  enables:
+    - geojson
+    - shapefile
+
+tags: [database, spatial, sqlite, embedded, lightweight]
+keywords: [spatialite, sqlite, embedded-database, r-tree, mobile-gis, file-based]
+
+roleRelevance:
+  gis-developer: 0.9
+  data-engineer: 0.8
+  gis-analyst: 0.6
+
+resources:
+  - title: "SpatiaLite Official Website"
+    url: "https://www.gaia-gis.it/fossil/libspatialite/"
+    type: documentation
+  - title: "SpatiaLite SQL Reference"
+    url: "https://www.gaia-gis.it/gaia-sins/spatialite-sql-latest.html"
+    type: reference
+
+lastUpdated: "2026-04-07"

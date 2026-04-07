@@ -1,0 +1,42 @@
+id: gis-servers-services-group
+title: GIS Servers & Services
+aliases: [Map Servers, OGC Services, Web Services]
+
+type: gis-servers-services
+difficulty: advanced
+importance: important
+isGroup: true
+
+summary: Server software and web services that publish and serve geospatial data via standardized protocols.
+description: |
+  GIS Servers and Services are the backend infrastructure for delivering geospatial data over the web.
+  They implement OGC standards (WMS, WFS, WCS, WMTS) and other protocols to serve map tiles,
+  vector data, and raster data to client applications. This includes server software like
+  GeoServer and MapServer, as well as standardized service protocols used for interoperability.
+
+style:
+  color: "#F97316"
+  icon: "server"
+
+relationships:
+  prerequisites:
+    - data-formats-group
+    - spatial-reference-systems-group
+  enables:
+    - tile-delivery-systems-group
+    - web-mapping-libraries-group
+
+tags: [servers, ogc, web-services, backend]
+keywords: [wms, wfs, wmts, wcs, geoserver, mapserver]
+
+roleRelevance:
+  gis-analyst: 0.5
+  gis-developer: 1.0
+  data-engineer: 1.0
+
+resources:
+  - title: "OGC Web Services"
+    url: "https://www.ogc.org/standards/owc"
+    type: reference
+
+lastUpdated: "2026-04-07"

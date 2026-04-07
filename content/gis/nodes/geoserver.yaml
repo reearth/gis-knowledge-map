@@ -1,0 +1,49 @@
+id: geoserver
+title: GeoServer
+aliases: [GeoServer OSGeo]
+
+type: gis-servers-services
+parentNode: gis-servers-services-group
+difficulty: advanced
+importance: important
+
+summary: An open-source server for sharing, processing, and editing geospatial data using open standards.
+description: |
+  GeoServer is an open-source server that allows you to share, process and edit geospatial data.
+  Designed for interoperability, it publishes data from major spatial data sources using open standards
+  (WMS, WFS, WCS, WMTS).
+
+  Built on GeoTools, supports various data formats (Shapefile, PostGIS, GeoTIFF, etc.), and provides
+  powerful styling (SLD/CSS), reprojection, and caching capabilities. Enterprise-ready and widely deployed.
+
+style:
+  color: "#F97316"
+  icon: "server"
+
+relationships:
+  related:
+    - postgis
+    - gdal
+  enables:
+    - shapefile
+    - geotiff
+    - openlayers
+    - leaflet
+
+tags: [server, wms, wfs, ogc, java, open-source]
+keywords: [ogc, standards, tiles, styling, sld, geotools, caching]
+
+roleRelevance:
+  gis-developer: 0.9
+  data-engineer: 0.9
+  gis-analyst: 0.5
+
+resources:
+  - title: "GeoServer Documentation"
+    url: "https://docs.geoserver.org/"
+    type: documentation
+  - title: "GeoServer Homepage"
+    url: "https://geoserver.org/"
+    type: reference
+
+lastUpdated: "2026-04-06"

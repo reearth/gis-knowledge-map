@@ -1,0 +1,50 @@
+id: arcgis-server
+title: ArcGIS Server
+aliases: [ESRI ArcGIS Server, ArcGIS Enterprise]
+
+type: gis-servers-services
+parentNode: gis-servers-services-group
+difficulty: advanced
+importance: important
+
+summary: ESRI's commercial GIS server platform for publishing maps, data, and analytical tools as web services.
+description: |
+  ArcGIS Server is ESRI's enterprise-grade server software for publishing and managing
+  GIS services. Part of ArcGIS Enterprise, it provides comprehensive capabilities for
+  web mapping, spatial analysis, and data management.
+
+  Supports map services, feature services, image services, geoprocessing services, and
+  OGC standards (WMS, WFS, WCS, WMTS). Integrates tightly with ArcGIS Pro and ArcGIS Online.
+  Scalable, secure, and includes advanced capabilities like distributed analysis and caching.
+
+style:
+  color: "#F97316"
+  icon: "server"
+
+relationships:
+  related:
+    - arcgis-pro
+    - arcgis-online
+    - geoserver
+  enables:
+    - wms
+    - wfs
+    - wmts
+
+tags: [server, commercial, esri, enterprise, web-services]
+keywords: [arcgis-server, esri, enterprise, rest-api, feature-service, map-service]
+
+roleRelevance:
+  gis-developer: 0.9
+  data-engineer: 0.8
+  gis-analyst: 0.6
+
+resources:
+  - title: "ArcGIS Server Documentation"
+    url: "https://enterprise.arcgis.com/en/server/"
+    type: documentation
+  - title: "ArcGIS REST API"
+    url: "https://developers.arcgis.com/rest/"
+    type: reference
+
+lastUpdated: "2026-04-07"

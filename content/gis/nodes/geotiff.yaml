@@ -1,0 +1,41 @@
+id: geotiff
+title: GeoTIFF
+aliases: [TIFF, Tagged Image File Format]
+
+type: data-formats
+parentNode: data-formats-group
+difficulty: intermediate
+importance: critical
+
+summary: A georeferenced raster image format that embeds geographic metadata within TIFF files.
+description: |
+  GeoTIFF is a public domain metadata standard which allows georeferencing information to be embedded
+  within a TIFF file. It's the industry standard for satellite imagery, aerial photography, and elevation models.
+
+  Supports various data types, compression methods, and can store multi-band raster data.
+
+style:
+  color: "#EC4899"
+  icon: "image"
+
+relationships:
+  related:
+    - geojson
+    - shapefile
+  enables:
+    - qgis
+
+tags: [raster, imagery, elevation]
+keywords: [dem, satellite, aerial, ndvi, tiff]
+
+roleRelevance:
+  gis-analyst: 0.9
+  remote-sensing-specialist: 1.0
+  gis-developer: 0.7
+
+resources:
+  - title: "GeoTIFF Format Specification"
+    url: "https://www.ogc.org/standard/geotiff/"
+    type: documentation
+
+lastUpdated: "2026-04-06"

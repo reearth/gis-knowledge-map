@@ -1,0 +1,45 @@
+id: deck-gl
+title: deck.gl
+aliases: [DeckGL, Uber deck.gl]
+
+type: web-mapping-libraries
+parentNode: web-mapping-libraries-group
+difficulty: advanced
+importance: important
+
+summary: A WebGL-powered framework for visual exploratory data analysis of large geospatial datasets in the browser.
+description: |
+  deck.gl is a GPU-powered framework for visual exploratory data analysis of large datasets.
+  Built by Uber, it provides a suite of high-performance, WebGL-based visualization layers for
+  rendering large-scale geospatial data.
+
+  Features include: GPU-accelerated rendering, 50+ built-in layers (hexagon, arc, trips, etc.),
+  React integration, and support for millions of data points with 60fps performance.
+
+style:
+  color: "#FB923C"
+  icon: "layers-3"
+
+relationships:
+  related:
+    - mapbox-gl
+    - cesium
+    - leaflet
+
+tags: [webgl, visualization, javascript, react, performance, open-source]
+keywords: [gpu, layers, hexagon, arc, animation, large-data]
+
+roleRelevance:
+  gis-developer: 1.0
+  data-engineer: 0.9
+  gis-analyst: 0.5
+
+resources:
+  - title: "deck.gl Documentation"
+    url: "https://deck.gl/"
+    type: documentation
+  - title: "deck.gl Examples"
+    url: "https://deck.gl/examples"
+    type: tutorial
+
+lastUpdated: "2026-04-06"

@@ -1,0 +1,47 @@
+id: lidar
+title: LiDAR
+aliases: [Light Detection and Ranging, Laser Scanning, Airborne Laser Scanning]
+
+type: remote-sensing
+parentNode: remote-sensing-group
+difficulty: advanced
+importance: critical
+
+summary: Active remote sensing using laser pulses to create precise 3D point clouds of terrain and objects.
+description: |
+  LiDAR (Light Detection and Ranging) uses laser pulses to measure distances, creating
+  dense 3D point clouds of the Earth's surface and objects. Unlike passive imagery,
+  LiDAR actively emits light and measures return times for precise elevation data.
+
+  Airborne LiDAR from aircraft/drones, terrestrial LiDAR from ground scanners, mobile LiDAR
+  from vehicles. Applications: high-accuracy DEMs, forestry (tree height/canopy), flood
+  modeling, infrastructure monitoring, archaeology (revealing hidden structures). Output
+  format: LAS/LAZ point clouds. Vegetation penetration enables "bare earth" models.
+
+style:
+  color: "#0EA5E9"
+  icon: "radar"
+
+relationships:
+  related:
+    - las-laz
+  enables:
+    - las-laz
+
+tags: [remote-sensing, lidar, 3d, point-cloud, elevation, laser]
+keywords: [lidar, laser-scanning, point-cloud, dem, dtm, bare-earth, vegetation-analysis]
+
+roleRelevance:
+  gis-analyst: 0.9
+  gis-developer: 0.7
+  data-engineer: 0.6
+
+resources:
+  - title: "NOAA Digital Coast LiDAR Data"
+    url: "https://coast.noaa.gov/digitalcoast/data/"
+    type: tool
+  - title: "Introduction to LiDAR"
+    url: "https://www.earthdatascience.org/courses/use-data-open-source-python/data-stories/what-is-lidar-data/"
+    type: tutorial
+
+lastUpdated: "2026-04-07"

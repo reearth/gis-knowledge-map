@@ -1,0 +1,51 @@
+id: wfs
+title: WFS
+aliases: [Web Feature Service, OGC WFS]
+
+type: gis-servers-services
+parentNode: gis-servers-services-group
+difficulty: intermediate
+importance: critical
+
+summary: OGC standard for serving and editing vector features (geometry and attributes) over HTTP.
+description: |
+  Web Feature Service (WFS) is an OGC standard for requesting and modifying vector geographic
+  features over HTTP. Unlike WMS (which returns images), WFS returns actual feature data with
+  geometry and attributes in formats like GML, GeoJSON, or Shapefile.
+
+  Supports GetFeature (retrieve features), DescribeFeatureType (schema info), GetCapabilities
+  (service metadata), and transactional operations (insert, update, delete). Essential for
+  data interoperability and enabling clients to perform analysis on source data.
+
+style:
+  color: "#F97316"
+  icon: "vector-square"
+
+relationships:
+  prerequisites:
+    - vector-data
+  related:
+    - wms
+    - ogc-api-features
+  enables:
+    - geoserver
+    - qgis
+    - openlayers
+
+tags: [ogc, standard, web-service, vector, protocol]
+keywords: [wfs, getfeature, gml, geojson, transactional, feature-service, ogc-standard]
+
+roleRelevance:
+  gis-developer: 1.0
+  gis-analyst: 0.8
+  data-engineer: 0.9
+
+resources:
+  - title: "OGC WFS Specification"
+    url: "https://www.ogc.org/standards/wfs"
+    type: documentation
+  - title: "WFS in GeoServer"
+    url: "https://docs.geoserver.org/latest/en/user/services/wfs/index.html"
+    type: reference
+
+lastUpdated: "2026-04-07"

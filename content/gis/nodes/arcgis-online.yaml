@@ -1,0 +1,51 @@
+id: arcgis-online
+title: ArcGIS Online
+aliases: [AGOL, ArcGIS.com]
+
+type: cloud-gis-platforms
+parentNode: cloud-gis-platforms-group
+difficulty: beginner
+importance: important
+
+summary: ESRI's cloud-based GIS platform for creating, sharing, and analyzing maps and spatial data.
+description: |
+  ArcGIS Online is ESRI's Software-as-a-Service (SaaS) platform for web-based GIS,
+  providing tools for mapping, analysis, data hosting, and collaboration without
+  requiring server infrastructure.
+
+  Includes web map creation, hosted feature/tile services, spatial analysis tools,
+  Story Maps, dashboards, and sharing capabilities. Integrates with ArcGIS Pro and
+  ArcGIS Enterprise. Subscription-based with tiered credits system. Popular for
+  organizations needing cloud GIS without managing infrastructure.
+
+style:
+  color: "#C084FC"
+  icon: "cloud"
+
+relationships:
+  related:
+    - arcgis-pro
+    - arcgis-server
+    - carto
+  enables:
+    - geojson
+    - shapefile
+
+tags: [cloud, saas, esri, web-mapping, collaboration]
+keywords: [arcgis-online, agol, cloud-gis, web-maps, story-maps, hosted-services]
+
+roleRelevance:
+  gis-analyst: 0.9
+  cartographer: 0.8
+  gis-developer: 0.7
+  data-engineer: 0.5
+
+resources:
+  - title: "ArcGIS Online Documentation"
+    url: "https://doc.arcgis.com/en/arcgis-online/"
+    type: documentation
+  - title: "ArcGIS Online Home"
+    url: "https://www.arcgis.com/"
+    type: tool
+
+lastUpdated: "2026-04-07"

@@ -1,0 +1,48 @@
+id: tms
+title: TMS
+aliases: [Tile Map Service, OSGeo TMS]
+
+type: tile-delivery-systems
+parentNode: tile-delivery-systems-group
+difficulty: intermediate
+importance: important
+
+summary: OGC Tile Map Service specification with bottom-left origin (Y-axis flipped from XYZ).
+description: |
+  TMS (Tile Map Service) is an OSGeo specification for serving map tiles. The key difference
+  from XYZ is the Y-axis origin: TMS uses bottom-left origin with Y increasing upward,
+  matching standard cartographic coordinates.
+
+  Defined by OSGeo, includes metadata about tile sets (bounds, projections, formats).
+  Requires coordinate transformation when used with XYZ-based clients. Supported by
+  GeoServer, MapServer, and other enterprise GIS servers.
+
+style:
+  color: "#F59E0B"
+  icon: "grid-3x3"
+
+relationships:
+  related:
+    - xyz-tiles
+    - wmts
+  enables:
+    - geoserver
+    - openlayers
+
+tags: [tiles, ogc, standard, specification, osgeo]
+keywords: [tms, tile-map-service, origin, y-axis, bottom-left, osgeo-standard]
+
+roleRelevance:
+  gis-developer: 0.9
+  gis-analyst: 0.4
+  data-engineer: 0.7
+
+resources:
+  - title: "TMS Specification (OSGeo Wiki)"
+    url: "https://wiki.osgeo.org/wiki/Tile_Map_Service_Specification"
+    type: documentation
+  - title: "TMS vs XYZ Tiles Explained"
+    url: "https://gist.github.com/tmcw/4954720"
+    type: reference
+
+lastUpdated: "2026-04-07"

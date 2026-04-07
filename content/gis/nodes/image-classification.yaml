@@ -1,0 +1,49 @@
+id: image-classification
+title: Image Classification
+aliases: [Land Cover Classification, Supervised Classification, Remote Sensing Classification]
+
+type: remote-sensing
+parentNode: remote-sensing-group
+difficulty: advanced
+importance: critical
+
+summary: Categorizing pixels into thematic classes like forest, water, urban for land cover mapping.
+description: |
+  Image classification assigns pixels or objects in remote sensing imagery to thematic
+  categories (land cover classes) like forest, water, urban, agriculture, bare soil.
+  Essential for land cover mapping, change detection, and environmental monitoring.
+
+  Supervised classification: train with known samples (Random Forest, SVM, Neural Networks).
+  Unsupervised: algorithms find natural clusters (K-means, ISODATA). Object-based (OBIA):
+  segment then classify groups of pixels. Modern approaches use deep learning (CNNs, U-Net).
+  Requires ground truth data and accuracy assessment (confusion matrix, kappa).
+
+style:
+  color: "#0EA5E9"
+  icon: "grid-2x2-check"
+
+relationships:
+  prerequisites:
+    - satellite-imagery
+    - spectral-analysis
+  related:
+    - google-earth-engine
+    - change-detection
+
+tags: [remote-sensing, classification, machine-learning, land-cover, supervised]
+keywords: [image-classification, land-cover, supervised-learning, random-forest, deep-learning, accuracy-assessment]
+
+roleRelevance:
+  gis-analyst: 1.0
+  data-engineer: 0.8
+  gis-developer: 0.7
+
+resources:
+  - title: "Remote Sensing Classification Methods"
+    url: "https://gsp.humboldt.edu/olm/Courses/GSP_216/lessons/classification.html"
+    type: tutorial
+  - title: "Google Earth Engine Classification"
+    url: "https://developers.google.com/earth-engine/guides/classification"
+    type: documentation
+
+lastUpdated: "2026-04-07"

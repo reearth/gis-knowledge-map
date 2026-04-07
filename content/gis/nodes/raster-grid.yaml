@@ -1,0 +1,78 @@
+id: raster-grid
+title: Raster Grid
+aliases: []
+
+type: data-models
+parentNode: data-models-group
+difficulty: intermediate
+importance: critical
+
+summary: Regular grid of cells (pixels) where each cell contains a value representing a continuous phenomenon like elevation, temperature, precipitation, or land cover classification.
+description: |
+  A Raster Grid is a data model that represents space as a regular matrix of cells (pixels),
+  where each cell stores a value. Rasters are ideal for modeling continuous phenomena like
+  elevation, temperature, rainfall, spectral reflectance, or discrete classifications like
+  land cover types. Each cell represents a fixed area on the ground determined by the spatial
+  resolution (e.g., 30m x 30m).
+
+  Raster data is characterized by rows, columns, cell size, extent, and coordinate reference
+  system. Values can be numeric (integers or floats) or categorical. Rasters support multi-band
+  storage (e.g., RGB imagery, multispectral data) and efficient storage of spatially continuous
+  data. They are fundamental to remote sensing, terrain analysis, and environmental modeling.
+
+style:
+  color: "#8B5CF6"
+  icon: "grid"
+
+relationships:
+  partOf:
+    - raster-data
+  requires:
+    - coordinate-systems
+  enables:
+    - dem-dsm
+  related:
+    - satellite-imagery
+    - image-classification
+
+tags: [raster, grid, pixels, continuous-data]
+keywords: [raster, grid, cells, pixels, elevation, imagery]
+
+roleRelevance:
+  gis-analyst: 0.9
+  cartographer: 0.75
+  remote-sensing-specialist: 0.95
+  urban-planner: 0.7
+  environmental-scientist: 0.95
+  gis-developer: 0.8
+
+resources:
+  - title: "GDAL Raster Data Model"
+    url: "https://gdal.org/user/raster_data_model.html"
+    type: reference
+  - title: "QGIS Working with Raster Data"
+    url: "https://docs.qgis.org/latest/en/docs/user_manual/working_with_raster/index.html"
+    type: documentation
+  - title: "ArcGIS Raster Data"
+    url: "https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/raster-data.htm"
+    type: documentation
+  - title: "Introduction to Raster Analysis"
+    url: "https://www.qgistutorials.com/en/docs/working_with_terrain.html"
+    type: tutorial
+  - title: "Raster Calculator and Map Algebra"
+    url: "https://docs.qgis.org/latest/en/docs/user_manual/working_with_raster/raster_analysis.html"
+    type: tutorial
+  - title: "Resampling and Reprojecting Rasters"
+    url: "https://gdal.org/programs/gdalwarp.html"
+    type: tutorial
+  - title: "Rasterio - Python Raster I/O"
+    url: "https://rasterio.readthedocs.io/"
+    type: tool
+  - title: "GDAL Raster Utilities"
+    url: "https://gdal.org/programs/index.html#raster-programs"
+    type: tool
+  - title: "NumPy for Raster Arrays"
+    url: "https://numpy.org/doc/stable/"
+    type: tool
+
+lastUpdated: "2026-04-07"

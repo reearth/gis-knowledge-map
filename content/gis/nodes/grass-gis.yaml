@@ -1,0 +1,48 @@
+id: grass-gis
+title: GRASS GIS
+aliases: [GRASS, Geographic Resources Analysis Support System]
+
+type: desktop-gis-applications
+parentNode: desktop-gis-applications-group
+difficulty: advanced
+importance: important
+
+summary: Open-source GIS software for geospatial data management, analysis, and modeling with powerful raster capabilities.
+description: |
+  GRASS GIS (Geographic Resources Analysis Support System) is a free, open-source GIS
+  with extensive capabilities for raster and vector data processing, image analysis,
+  spatial modeling, and visualization. Originally developed by the US Army in 1982.
+
+  Particularly strong in raster analysis, terrain modeling, hydrological analysis, and
+  remote sensing. Includes 500+ modules for spatial analysis. Command-line and GUI interfaces,
+  Python API, integrates with QGIS. Used in academia, research, and environmental modeling.
+
+style:
+  color: "#3B82F6"
+  icon: "wrench"
+
+relationships:
+  related:
+    - qgis
+    - gdal
+  enables:
+    - raster-data
+    - satellite-imagery
+
+tags: [desktop, open-source, raster-analysis, modeling, research]
+keywords: [grass, raster-analysis, terrain-modeling, hydrology, remote-sensing, spatial-modeling]
+
+roleRelevance:
+  gis-analyst: 0.9
+  gis-developer: 0.7
+  data-engineer: 0.5
+
+resources:
+  - title: "GRASS GIS Official Website"
+    url: "https://grass.osgeo.org/"
+    type: tool
+  - title: "GRASS GIS Documentation"
+    url: "https://grass.osgeo.org/learn/"
+    type: documentation
+
+lastUpdated: "2026-04-07"

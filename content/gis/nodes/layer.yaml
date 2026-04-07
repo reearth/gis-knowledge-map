@@ -1,0 +1,47 @@
+id: layer
+title: Layer
+aliases: []
+
+type: core-concepts
+parentNode: core-concepts-group
+difficulty: beginner
+importance: critical
+
+summary: A thematic collection of geographic features or phenomena displayed together as a single unit in a GIS.
+description: |
+  A thematic collection of geographic features or phenomena displayed together as a single unit in a GIS. Layers allow users to organize spatial data by theme and control visibility, making it easier to analyze and visualize complex geographic information.
+
+style:
+  color: "#64748B"
+  icon: "layers"
+
+relationships:
+  enables:
+    - vector-data
+    - raster-data
+  requires:
+    - coordinate-reference-system
+
+tags:
+  - data-organization
+  - visualization
+  - mapping
+keywords:
+  - layer
+  - theme
+  - data organization
+  - map composition
+  - overlay
+
+roleRelevance:
+  gis-analyst: 1.0
+  gis-developer: 0.9
+  cartographer: 1.0
+resources:
+  - title: Understanding Layers in GIS
+    url: https://www.esri.com/en-us/what-is-gis/overview
+    type: documentation
+  - title: GIS Layer Management
+    url: https://learn.arcgis.com/en/
+    type: tutorial
+lastUpdated: "2026-04-07"

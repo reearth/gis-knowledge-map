@@ -1,0 +1,47 @@
+id: scale
+title: Scale
+aliases: []
+
+type: core-concepts
+parentNode: core-concepts-group
+difficulty: beginner
+importance: critical
+
+summary: The relationship between distance on a map and the corresponding distance on Earth's surface, expressed as a ratio or verbal description.
+description: |
+  The relationship between distance on a map and the corresponding distance on Earth's surface, expressed as a ratio (e.g., 1:24,000) or verbal description. Scale determines the level of generalization and detail shown on a map. Large-scale maps show more detail for smaller areas, while small-scale maps show less detail for larger areas.
+
+style:
+  color: "#64748B"
+  icon: "ruler"
+
+relationships:
+  related:
+    - resolution
+  affects:
+    - cartography
+
+tags:
+  - cartography
+  - mapping
+  - generalization
+keywords:
+  - scale
+  - map scale
+  - representative fraction
+  - large scale
+  - small scale
+  - generalization
+
+roleRelevance:
+  gis-analyst: 0.8
+  gis-developer: 0.7
+  cartographer: 1.0
+resources:
+  - title: Understanding Map Scale
+    url: https://www.usgs.gov/faqs/what-does-term-scale-mean-map-context
+    type: documentation
+  - title: Scale and Generalization in GIS
+    url: https://www.esri.com/en-us/what-is-gis/overview
+    type: tutorial
+lastUpdated: "2026-04-07"

@@ -1,0 +1,80 @@
+id: network-dataset
+title: Network Dataset
+aliases: []
+
+type: data-models
+parentNode: data-models-group
+difficulty: advanced
+importance: important
+
+summary: Graph-based data structure representing connected linear features with topology and attributes for routing, navigation, and network analysis across transportation, utility, and flow systems.
+description: |
+  A Network Dataset is a specialized data model that represents interconnected linear features
+  as a mathematical graph structure with nodes (junctions) and edges (links). It goes beyond
+  simple line geometry by encoding connectivity, directionality, impedance (cost/travel time),
+  restrictions, and hierarchies necessary for routing and network analysis.
+
+  Network datasets are essential for transportation routing (shortest path, optimal routes),
+  service area analysis, location-allocation problems, and utility network tracing. They support
+  turn restrictions, one-way streets, time-dependent costs, and multi-modal transportation.
+  Common applications include GPS navigation, logistics optimization, emergency response planning,
+  and infrastructure network management (roads, water, electricity, telecommunications).
+
+style:
+  color: "#8B5CF6"
+  icon: "share-2"
+
+relationships:
+  basedOn:
+    - line
+  requires:
+    - topology
+    - graph-theory
+
+tags: [network, routing, topology, transportation]
+keywords: [network, routing, graph, connectivity, navigation]
+
+roleRelevance:
+  gis-analyst: 0.85
+  cartographer: 0.6
+  remote-sensing-specialist: 0.4
+  urban-planner: 0.95
+  environmental-scientist: 0.6
+  gis-developer: 0.9
+
+resources:
+  - title: "ArcGIS Network Analyst"
+    url: "https://pro.arcgis.com/en/pro-app/latest/help/analysis/networks/what-is-network-analyst-.htm"
+    type: documentation
+  - title: "QGIS Network Analysis"
+    url: "https://docs.qgis.org/latest/en/docs/user_manual/processing_algs/qgis/networkanalysis.html"
+    type: documentation
+  - title: "pgRouting Documentation"
+    url: "https://docs.pgrouting.org/"
+    type: reference
+  - title: "Introduction to Network Analysis"
+    url: "https://www.qgistutorials.com/en/docs/network_analysis.html"
+    type: tutorial
+  - title: "Building a Routable Network"
+    url: "https://workshop.pgrouting.org/2.8/en/index.html"
+    type: tutorial
+  - title: "Service Area and Isochrone Analysis"
+    url: "https://docs.qgis.org/latest/en/docs/user_manual/processing_algs/qgis/networkanalysis.html"
+    type: tutorial
+  - title: "pgRouting"
+    url: "https://pgrouting.org/"
+    type: tool
+  - title: "OSRM - Open Source Routing Machine"
+    url: "http://project-osrm.org/"
+    type: tool
+  - title: "NetworkX"
+    url: "https://networkx.org/"
+    type: tool
+  - title: "Valhalla Routing Engine"
+    url: "https://github.com/valhalla/valhalla"
+    type: tool
+  - title: "GraphHopper"
+    url: "https://www.graphhopper.com/"
+    type: tool
+
+lastUpdated: "2026-04-07"

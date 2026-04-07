@@ -1,0 +1,96 @@
+id: crs
+title: Coordinate Reference System (CRS)
+aliases: []
+
+type: spatial-reference-systems
+parentNode: spatial-reference-systems-group
+difficulty: intermediate
+importance: critical
+estimatedTime: 45 minutes
+
+summary: A Coordinate Reference System (CRS) is a framework that uses coordinates to uniquely identify locations on Earth's surface.
+description: >
+  A Coordinate Reference System (CRS) is a framework that uses coordinates to uniquely identify locations on Earth's surface. It combines a coordinate system, a datum (reference surface), and a projection method to define how spatial data relates to real-world positions. Understanding CRS is fundamental to working with any geospatial data.
+
+style:
+  color: "#10B981"
+  icon: "compass"
+
+topics:
+  - Geographic vs Projected CRS
+  - CRS components (datum, ellipsoid, prime meridian, units)
+  - Coordinate system types (Cartesian, spherical, cylindrical)
+  - CRS identification (EPSG codes, WKT, PROJ strings)
+  - Importance of consistent CRS across datasets
+
+prerequisites:
+  - basic-gis-concepts
+  - coordinate-systems
+
+relationships:
+  related:
+    - datum
+    - map-projection
+    - epsg-codes
+    - wgs84
+    - reprojection
+
+learningOutcomes:
+  - Understand the difference between geographic and projected coordinate systems
+  - Identify CRS from metadata and EPSG codes
+  - Recognize when CRS mismatches cause spatial errors
+  - Select appropriate CRS for different mapping scenarios
+
+roleRelevance:
+  gis-analyst: 1.0
+  gis-developer: 1.0
+  geospatial-data-scientist: 0.9
+  cartographer: 0.9
+  remote-sensing-specialist: 0.8
+
+resources:
+  - title: "EPSG.io - Coordinate Systems Worldwide"
+    url: "https://epsg.io/"
+    type: reference
+  - title: "PROJ - Coordinate Transformation"
+    url: "https://proj.org/"
+    type: reference
+  - title: "OGC CRS Standards"
+    url: "https://www.ogc.org/standards/sfa"
+    type: reference
+  - title: "Understanding Coordinate Reference Systems"
+    url: "https://docs.qgis.org/latest/en/docs/gentle_gis_introduction/coordinate_reference_systems.html"
+    type: tutorial
+  - title: "Coordinate Systems and Projections - Esri"
+    url: "https://www.esri.com/arcgis-blog/products/arcgis-pro/mapping/coordinate-systems-difference/"
+    type: tutorial
+  - title: "What is a Coordinate Reference System?"
+    url: "https://www.youtube.com/watch?v=Z41Dt7_R180"
+    type: video
+
+practicalExercises:
+  - Identify the CRS of existing spatial datasets using QGIS or GDAL
+  - Compare how the same location appears in different CRS
+  - Fix a dataset with missing or incorrect CRS definition
+  - Convert coordinates between geographic and projected systems
+
+commonMistakes:
+  - Assuming all datasets use the same CRS
+  - Confusing CRS with file formats
+  - Ignoring CRS metadata leading to misaligned layers
+  - Using inappropriate CRS for the area of interest (e.g., global CRS for local data)
+
+realWorldApplications:
+  - GPS receivers outputting coordinates in different CRS
+  - Web mapping applications standardizing on Web Mercator
+  - National mapping agencies using country-specific CRS
+  - Aviation and maritime navigation using specialized CRS
+
+tags:
+  - coordinate-systems
+  - projections
+  - spatial-reference
+  - epsg
+  - datum
+
+lastUpdated: "2026-04-07"

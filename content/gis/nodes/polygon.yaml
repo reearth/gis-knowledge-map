@@ -1,0 +1,77 @@
+id: polygon
+title: Polygon
+aliases: []
+
+type: data-models
+parentNode: data-models-group
+difficulty: beginner
+importance: critical
+
+summary: Two-dimensional geometry representing areas with defined boundaries, such as land parcels, lakes, administrative boundaries, building footprints, or land use zones.
+description: |
+  A Polygon is a vector geometry type representing a two-dimensional area enclosed by one or
+  more closed linear rings. The outer ring defines the polygon boundary, while optional inner
+  rings represent holes. Polygons are used to model area features such as land parcels, water
+  bodies, administrative boundaries, zoning districts, building footprints, or ecological zones.
+
+  Polygons have both perimeter (boundary length) and area. They must be topologically closed
+  (first and last points identical) and typically follow rules like non-self-intersection.
+  MultiPolygons allow representation of disconnected areas as a single feature (e.g., a country
+  with islands). Polygons are fundamental for area calculations, spatial overlay operations,
+  and territorial analysis.
+
+style:
+  color: "#8B5CF6"
+  icon: "hexagon"
+
+relationships:
+  partOf:
+    - vector-data
+  composedOf:
+    - line
+  requires:
+    - coordinate-systems
+  enables:
+    - topology
+
+tags: [geometry, vector, area, boundary]
+keywords: [polygon, area, boundary, parcel, zone]
+
+roleRelevance:
+  gis-analyst: 0.95
+  cartographer: 0.85
+  remote-sensing-specialist: 0.85
+  urban-planner: 0.95
+  environmental-scientist: 0.9
+  gis-developer: 0.8
+
+resources:
+  - title: "OGC Simple Features - Polygon Geometry"
+    url: "https://www.ogc.org/standards/sfa"
+    type: reference
+  - title: "QGIS Working with Polygon Data"
+    url: "https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_geometry.html"
+    type: documentation
+  - title: "ArcGIS Polygon Features"
+    url: "https://pro.arcgis.com/en/pro-app/latest/help/data/geodatabases/overview/feature-class-basics.htm"
+    type: documentation
+  - title: "Digitizing Polygons in QGIS"
+    url: "https://www.qgistutorials.com/en/docs/digitizing_basics.html"
+    type: tutorial
+  - title: "Polygon Overlay Analysis"
+    url: "https://docs.qgis.org/latest/en/docs/user_manual/processing_algs/qgis/vectoroverlay.html"
+    type: tutorial
+  - title: "Validating Polygon Topology"
+    url: "https://docs.qgis.org/latest/en/docs/user_manual/processing_algs/qgis/vectorgeometry.html"
+    type: tutorial
+  - title: "Shapely Polygon Operations"
+    url: "https://shapely.readthedocs.io/en/stable/manual.html#polygons"
+    type: tool
+  - title: "PostGIS Polygon Functions"
+    url: "https://postgis.net/docs/reference.html#Geometry_Constructors"
+    type: tool
+  - title: "Turf.js Polygon Tools"
+    url: "https://turfjs.org/"
+    type: tool
+
+lastUpdated: "2026-04-07"

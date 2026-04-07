@@ -1,0 +1,48 @@
+id: mapbox-platform
+title: Mapbox Platform
+aliases: [Mapbox, Mapbox Services]
+
+type: cloud-gis-platforms
+parentNode: cloud-gis-platforms-group
+difficulty: intermediate
+importance: important
+
+summary: Mapbox's comprehensive location platform providing mapping, geocoding, navigation, and spatial services.
+description: |
+  Mapbox Platform provides developer-focused location services including custom maps,
+  geocoding, directions, navigation, search, and spatial analytics. Known for customizable
+  vector maps and high-performance rendering.
+
+  Includes Mapbox GL JS/Native SDKs, Mapbox Studio (visual map design), Tilesets API,
+  Geocoding API, Navigation SDK, and more. Powers location features for major apps
+  (Snapchat, Instacart, The Weather Channel). Pay-as-you-go pricing model.
+
+style:
+  color: "#C084FC"
+  icon: "cloud"
+
+relationships:
+  related:
+    - mapbox-gl
+    - carto
+  enables:
+    - mvt
+    - geojson
+
+tags: [cloud, platform, developer-tools, navigation, geocoding]
+keywords: [mapbox, vector-tiles, geocoding, navigation, mapbox-studio, custom-maps]
+
+roleRelevance:
+  gis-developer: 1.0
+  gis-analyst: 0.6
+  data-engineer: 0.7
+
+resources:
+  - title: "Mapbox Documentation"
+    url: "https://docs.mapbox.com/"
+    type: documentation
+  - title: "Mapbox Platform"
+    url: "https://www.mapbox.com/"
+    type: tool
+
+lastUpdated: "2026-04-07"

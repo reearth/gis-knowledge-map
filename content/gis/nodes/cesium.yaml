@@ -1,0 +1,45 @@
+id: cesium
+title: Cesium
+aliases: [CesiumJS, Cesium for Unreal]
+
+type: web-mapping-libraries
+parentNode: web-mapping-libraries-group
+difficulty: advanced
+importance: important
+
+summary: An open-source JavaScript library for creating 3D globes and 2D maps in web browsers with time-dynamic visualizations.
+description: |
+  CesiumJS is a JavaScript library for creating 3D globes and maps without a plugin. It uses WebGL for
+  hardware-accelerated graphics, and is cross-platform, cross-browser, and optimized for dynamic data visualization.
+
+  Supports 3D terrain, imagery, 3D Tiles for massive datasets, time-dynamic data, and various geospatial formats.
+  Widely used for aerospace, defense, simulation, and geospatial visualization.
+
+style:
+  color: "#FB923C"
+  icon: "globe-2"
+
+relationships:
+  related:
+    - leaflet
+    - mapbox-gl
+    - openlayers
+    - deck-gl
+
+tags: [3d, javascript, web, webgl, time-dynamic, open-source]
+keywords: [3d-tiles, terrain, globe, satellite, czml, gltf]
+
+roleRelevance:
+  gis-developer: 0.9
+  gis-analyst: 0.4
+  data-engineer: 0.6
+
+resources:
+  - title: "Cesium Documentation"
+    url: "https://cesium.com/platform/cesiumjs/"
+    type: documentation
+  - title: "Cesium Sandcastle Examples"
+    url: "https://sandcastle.cesium.com/"
+    type: tutorial
+
+lastUpdated: "2026-04-06"

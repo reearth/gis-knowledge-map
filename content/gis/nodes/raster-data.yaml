@@ -1,0 +1,49 @@
+id: raster-data
+title: Raster Data
+aliases: []
+
+type: core-concepts
+parentNode: core-concepts-group
+difficulty: beginner
+importance: critical
+
+summary: Continuous grid-based spatial data where the geographic area is divided into cells (pixels), and each cell contains a single value representing a phenomenon.
+description: |
+  Continuous grid-based spatial data where the geographic area is divided into cells (pixels), and each cell contains a single value representing a phenomenon. Rasters are ideal for representing continuous surfaces like elevation, temperature, satellite imagery, and aerial photography.
+
+style:
+  color: "#64748B"
+  icon: "grid-3x3"
+
+relationships:
+  alternativeTo:
+    - vector-data
+  related:
+    - resolution
+  uses:
+    - georeferencing
+
+tags:
+  - data-model
+  - grid
+  - imagery
+keywords:
+  - raster
+  - grid
+  - pixels
+  - cells
+  - continuous data
+  - imagery
+
+roleRelevance:
+  gis-analyst: 1.0
+  gis-developer: 0.9
+  cartographer: 0.9
+resources:
+  - title: Raster Data Fundamentals
+    url: https://www.esri.com/en-us/what-is-gis/overview
+    type: documentation
+  - title: Working with Raster Data
+    url: https://docs.qgis.org/latest/en/docs/
+    type: tutorial
+lastUpdated: "2026-04-07"

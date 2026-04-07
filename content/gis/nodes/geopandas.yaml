@@ -1,0 +1,49 @@
+id: geopandas
+title: GeoPandas
+aliases: [gpd]
+
+type: analysis-libraries
+parentNode: analysis-libraries-group
+difficulty: intermediate
+importance: critical
+
+summary: A Python library that extends pandas to enable spatial operations on geometric types.
+description: |
+  GeoPandas extends the pandas DataFrame to support spatial data types and operations.
+  It combines the capabilities of pandas for data manipulation with Shapely for geometric
+  operations and Fiona for file I/O.
+
+  Provides a GeoDataFrame object that can perform spatial operations (overlay, spatial joins,
+  buffer, distance calculations) while maintaining the familiar pandas interface. Supports
+  reading and writing common GIS formats (Shapefile, GeoJSON, GeoPackage, PostGIS).
+
+style:
+  color: "#06B6D4"
+  icon: "function-square"
+
+relationships:
+  prerequisites:
+    - shapely
+  related:
+    - postgis
+  enables:
+    - geojson
+    - shapefile
+
+tags: [python, pandas, spatial-analysis, dataframe, geospatial]
+keywords: [geopandas, spatial-join, overlay, buffer, geodataframe, pandas, shapely]
+
+roleRelevance:
+  gis-developer: 1.0
+  gis-analyst: 1.0
+  data-engineer: 1.0
+
+resources:
+  - title: "GeoPandas Documentation"
+    url: "https://geopandas.org/"
+    type: documentation
+  - title: "GeoPandas Examples Gallery"
+    url: "https://geopandas.org/en/stable/gallery/index.html"
+    type: tutorial
+
+lastUpdated: "2026-04-07"

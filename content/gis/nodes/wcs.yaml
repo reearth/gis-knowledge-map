@@ -1,0 +1,50 @@
+id: wcs
+title: WCS
+aliases: [Web Coverage Service, OGC WCS]
+
+type: gis-servers-services
+parentNode: gis-servers-services-group
+difficulty: advanced
+importance: important
+
+summary: OGC standard for serving multi-dimensional coverage data (rasters) with full data values.
+description: |
+  Web Coverage Service (WCS) is an OGC standard for accessing and retrieving coverage data
+  (rasters, grids, point clouds) with original data values rather than rendered images.
+  Enables clients to download and analyze actual raster data.
+
+  Supports GetCoverage (retrieve raster data), DescribeCoverage (detailed metadata),
+  GetCapabilities (service info). Can request subsets, different formats (GeoTIFF, NetCDF),
+  reprojection, and band selection. Used for scientific data, satellite imagery, and DEM access.
+
+style:
+  color: "#F97316"
+  icon: "grid-2x2"
+
+relationships:
+  prerequisites:
+    - raster-data
+  related:
+    - wms
+    - cog
+  enables:
+    - geoserver
+    - geotiff
+
+tags: [ogc, standard, web-service, raster, coverage]
+keywords: [wcs, getcoverage, raster-data, geotiff, netcdf, ogc-standard, multi-dimensional]
+
+roleRelevance:
+  gis-developer: 0.8
+  data-engineer: 0.9
+  gis-analyst: 0.7
+
+resources:
+  - title: "OGC WCS Specification"
+    url: "https://www.ogc.org/standards/wcs"
+    type: documentation
+  - title: "WCS in GeoServer"
+    url: "https://docs.geoserver.org/latest/en/user/services/wcs/index.html"
+    type: reference
+
+lastUpdated: "2026-04-07"

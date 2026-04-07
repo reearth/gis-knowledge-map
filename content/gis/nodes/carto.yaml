@@ -1,0 +1,49 @@
+id: carto
+title: CARTO
+aliases: [CartoDB, CARTO Platform]
+
+type: cloud-gis-platforms
+parentNode: cloud-gis-platforms-group
+difficulty: intermediate
+importance: important
+
+summary: Cloud-native location intelligence platform for spatial analytics, visualization, and application development.
+description: |
+  CARTO is a cloud-native spatial analytics platform built on modern data warehouses
+  (BigQuery, Snowflake, Redshift, PostgreSQL). Provides tools for spatial data science,
+  location intelligence, and building custom spatial applications.
+
+  Features include CARTO Builder (no-code map creation), Analytics Toolbox (SQL functions
+  for spatial analysis), deck.gl-based visualizations, and APIs for developers. Emphasizes
+  scalable cloud-native architecture and integration with data warehouse ecosystems.
+
+style:
+  color: "#C084FC"
+  icon: "cloud"
+
+relationships:
+  related:
+    - deck-gl
+    - postgis
+    - arcgis-online
+  enables:
+    - geojson
+    - mvt
+
+tags: [cloud, analytics, data-warehouse, visualization, location-intelligence]
+keywords: [carto, location-intelligence, bigquery, snowflake, spatial-analytics, cloud-native]
+
+roleRelevance:
+  gis-analyst: 0.9
+  data-engineer: 1.0
+  gis-developer: 0.9
+
+resources:
+  - title: "CARTO Documentation"
+    url: "https://docs.carto.com/"
+    type: documentation
+  - title: "CARTO Platform"
+    url: "https://carto.com/"
+    type: tool
+
+lastUpdated: "2026-04-07"

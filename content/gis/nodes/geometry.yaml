@@ -1,0 +1,45 @@
+id: geometry
+title: Geometry
+aliases: []
+
+type: core-concepts
+parentNode: core-concepts-group
+difficulty: beginner
+importance: critical
+
+summary: The spatial component that defines the shape, location, and extent of geographic features using coordinate pairs.
+description: |
+  The spatial component that defines the shape, location, and extent of geographic features using coordinate pairs. Geometry types include points (0D), lines (1D), polygons (2D), and their multi-part variants. It provides the mathematical foundation for representing real-world objects in GIS.
+
+style:
+  color: "#64748B"
+  icon: "shapes"
+
+relationships:
+  partOf:
+    - feature
+  related: []
+
+tags:
+  - spatial-data
+  - vector-data
+  - coordinates
+keywords:
+  - geometry
+  - shape
+  - coordinates
+  - spatial representation
+  - geometry types
+
+roleRelevance:
+  gis-analyst: 0.9
+  gis-developer: 1.0
+  cartographer: 0.9
+resources:
+  - title: Simple Features Specification
+    url: https://www.ogc.org/standard/sfa/
+    type: documentation
+  - title: Vector Geometry Fundamentals
+    url: https://docs.qgis.org/latest/en/docs/
+    type: tutorial
+lastUpdated: "2026-04-07"

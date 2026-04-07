@@ -1,0 +1,45 @@
+id: leaflet
+title: Leaflet
+aliases: []
+
+type: web-mapping-libraries
+parentNode: web-mapping-libraries-group
+difficulty: beginner
+importance: important
+
+summary: A lightweight open-source JavaScript library for mobile-friendly interactive maps.
+description: |
+  Leaflet is the leading open-source JavaScript library for mobile-friendly
+  interactive maps. It's designed with simplicity, performance, and usability in mind,
+  weighing just about 42 KB of JS.
+
+style:
+  color: "#FB923C"
+  icon: "map-pin"
+
+relationships:
+  prerequisites:
+    - geojson
+  related:
+    - mapbox-gl
+    - openlayers
+    - deck-gl
+
+tags: [javascript, web, library, interactive, maps]
+keywords: [Leaflet, JavaScript, web maps, open-source]
+
+roleRelevance:
+  gis-analyst: 0.4
+  gis-developer: 1.0
+  cartographer: 0.6
+  data-engineer: 0.7
+
+resources:
+  - title: "Leaflet Official Website"
+    url: "https://leafletjs.com"
+    type: tool
+  - title: "Leaflet Tutorials"
+    url: "https://leafletjs.com/examples.html"
+    type: tutorial
+
+lastUpdated: "2026-04-06"

@@ -1,0 +1,82 @@
+id: point-cloud
+title: Point Cloud
+aliases: []
+
+type: data-models
+parentNode: data-models-group
+difficulty: advanced
+importance: important
+
+summary: Dense collection of 3D points captured from LiDAR scanning or photogrammetry, where each point has X, Y, Z coordinates and often additional attributes like intensity or RGB color.
+description: |
+  A Point Cloud is a data model consisting of millions or billions of 3D points representing
+  the surface geometry of objects, terrain, and structures. Each point typically has X, Y, Z
+  coordinates and may include additional attributes such as intensity (laser return strength),
+  RGB color values, classification codes, return numbers, or timestamps.
+
+  Point clouds are primarily acquired through LiDAR (Light Detection and Ranging) sensors or
+  photogrammetric processing of overlapping images. They provide highly detailed 3D
+  representations of environments and are used for terrain modeling, building extraction,
+  vegetation analysis, infrastructure inspection, and autonomous vehicle navigation. Point
+  clouds can be processed into DEMs, DSMs, 3D meshes, or classified feature datasets.
+
+style:
+  color: "#8B5CF6"
+  icon: "box"
+
+relationships:
+  derivedFrom:
+    - lidar
+    - photogrammetry
+  requires:
+    - coordinate-systems
+  enables:
+    - dem-dsm
+  related:
+    - point
+    - 3d-tiles
+
+tags: [3d, lidar, point-cloud, photogrammetry]
+keywords: [point cloud, LiDAR, 3D, laser scanning, photogrammetry]
+
+roleRelevance:
+  gis-analyst: 0.7
+  cartographer: 0.6
+  remote-sensing-specialist: 0.95
+  urban-planner: 0.75
+  environmental-scientist: 0.85
+  gis-developer: 0.8
+
+resources:
+  - title: "PDAL - Point Data Abstraction Library"
+    url: "https://pdal.io/"
+    type: reference
+  - title: "LAS Specification"
+    url: "https://www.asprs.org/divisions-committees/lidar-division/laser-las-file-format-exchange-activities"
+    type: reference
+  - title: "CloudCompare Documentation"
+    url: "https://www.cloudcompare.org/doc/qCC/CloudCompare%20v2.6.1%20-%20User%20manual.pdf"
+    type: documentation
+  - title: "Introduction to LiDAR Point Clouds"
+    url: "https://www.earthdatascience.org/courses/use-data-open-source-python/data-stories/what-is-lidar-data/"
+    type: tutorial
+  - title: "Processing Point Clouds with PDAL"
+    url: "https://pdal.io/en/latest/tutorial/index.html"
+    type: tutorial
+  - title: "Point Cloud Classification in QGIS"
+    url: "https://docs.qgis.org/latest/en/docs/user_manual/working_with_point_clouds/index.html"
+    type: tutorial
+  - title: "PDAL Point Cloud Processing"
+    url: "https://pdal.io/"
+    type: tool
+  - title: "LAStools"
+    url: "https://rapidlasso.com/lastools/"
+    type: tool
+  - title: "Open3D"
+    url: "http://www.open3d.org/"
+    type: tool
+  - title: "Potree WebGL Viewer"
+    url: "https://github.com/potree/potree"
+    type: tool
+
+lastUpdated: "2026-04-07"

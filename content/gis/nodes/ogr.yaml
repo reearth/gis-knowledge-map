@@ -1,0 +1,51 @@
+id: ogr
+title: OGR
+aliases: [OGR Simple Features Library, OpenGIS Simple Features Reference Implementation]
+
+type: processing-tools
+parentNode: processing-tools-group
+difficulty: advanced
+importance: important
+
+summary: Vector data library component of GDAL for reading, writing, and converting vector geospatial data formats.
+description: |
+  OGR Simple Features Library is the vector data handling component of GDAL, providing a unified API
+  for reading and writing multiple vector formats. It supports format conversion, coordinate system
+  transformations, and spatial/attribute filtering.
+
+  Key utilities include ogr2ogr for vector conversion, ogrinfo for data inspection, and ogr_merge
+  for combining datasets. OGR is widely used as the backend for vector operations in many GIS applications.
+
+style:
+  color: "#14B8A6"
+  icon: "wrench"
+
+relationships:
+  partOf:
+    - gdal
+  supports:
+    - shapefile
+    - geojson
+    - kml
+  usedBy:
+    - qgis
+    - mapserver
+    - geoserver
+
+tags: [vector, conversion, command-line, open-source]
+keywords: [ogr2ogr, vector conversion, shapefile, format translation, spatial filter]
+
+roleRelevance:
+  gis-developer: 1.0
+  data-engineer: 1.0
+  gis-analyst: 0.8
+
+resources:
+  - title: "OGR Documentation"
+    url: "https://gdal.org/programs/ogr2ogr.html"
+    type: documentation
+  - title: "OGR Vector Formats"
+    url: "https://gdal.org/drivers/vector/index.html"
+    type: documentation
+
+lastUpdated: "2026-04-07"

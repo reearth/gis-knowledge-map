@@ -1,0 +1,102 @@
+domain: gis
+displayName: Geographic Information Systems
+version: 1.0.0
+
+# Domain metadata
+description: Interactive knowledge map for GIS concepts, tools, and workflows
+icon: "map"
+color: "#10B981"
+
+# Define available types in this domain (combined category + type)
+nodeTypes:
+  - id: core-concepts
+    label: Core Concepts
+    color: "#64748B"
+    icon: "lightbulb"
+  - id: spatial-reference-systems
+    label: Spatial Reference Systems
+    color: "#10B981"
+    icon: "compass"
+  - id: data-models
+    label: Data Models
+    color: "#8B5CF6"
+    icon: "shapes"
+  - id: data-formats
+    label: Data Formats
+    color: "#EC4899"
+    icon: "file-code"
+  - id: processing-tools
+    label: Processing Tools
+    color: "#14B8A6"
+    icon: "wrench"
+  - id: analysis-libraries
+    label: Analysis Libraries
+    color: "#06B6D4"
+    icon: "library"
+  - id: gis-servers-services
+    label: GIS Servers & Services
+    color: "#F97316"
+    icon: "server"
+  - id: tile-delivery-systems
+    label: Tile & Delivery Systems
+    color: "#F59E0B"
+    icon: "grid-3x3"
+  - id: web-mapping-libraries
+    label: Web Mapping Libraries
+    color: "#FB923C"
+    icon: "globe"
+  - id: desktop-gis-applications
+    label: Desktop GIS Applications
+    color: "#3B82F6"
+    icon: "monitor"
+  - id: spatial-databases
+    label: Spatial Databases
+    color: "#A855F7"
+    icon: "database"
+  - id: cloud-gis-platforms
+    label: Cloud GIS Platforms
+    color: "#C084FC"
+    icon: "cloud"
+  - id: remote-sensing
+    label: Remote Sensing
+    color: "#0EA5E9"
+    icon: "satellite"
+
+# Define relationship types
+relationshipTypes:
+  - id: prerequisite
+    label: Prerequisite of
+    color: "#EF4444"
+    style: dashed
+  - id: partOf
+    label: Part of
+    color: "#6B7280"
+    style: solid
+  - id: related
+    label: Related to
+    color: "#9CA3AF"
+    style: dotted
+  - id: enables
+    label: Enables
+    color: "#10B981"
+    style: solid
+  - id: usedBy
+    label: Used by
+    color: "#F59E0B"
+    style: solid
+
+# Categories are now combined with nodeTypes above
+categories: []
+
+# Roles for filtering
+roles:
+  - id: gis-analyst
+    label: GIS Analyst
+  - id: gis-developer
+    label: GIS Developer
+  - id: cartographer
+    label: Cartographer
+  - id: data-engineer
+    label: Geospatial Data Engineer
+  - id: remote-sensing-specialist
+    label: Remote Sensing Specialist

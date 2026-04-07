@@ -1,0 +1,49 @@
+id: google-earth-engine
+title: Google Earth Engine
+aliases: [GEE, Earth Engine]
+
+type: cloud-gis-platforms
+parentNode: cloud-gis-platforms-group
+difficulty: advanced
+importance: critical
+
+summary: Google's planetary-scale platform for geospatial analysis with petabytes of satellite imagery and computing power.
+description: |
+  Google Earth Engine is a cloud-based platform for planetary-scale environmental data
+  analysis, combining a multi-petabyte catalog of satellite imagery and geospatial datasets
+  with massive computational capabilities for parallel processing.
+
+  Provides access to Landsat, Sentinel, MODIS, and hundreds of other datasets updated daily.
+  JavaScript and Python APIs for analysis, machine learning integration, time-series analysis,
+  and change detection. Used for climate research, deforestation monitoring, agriculture, and
+  environmental science. Free for research and education.
+
+style:
+  color: "#C084FC"
+  icon: "satellite"
+
+relationships:
+  related:
+    - satellite-imagery
+    - remote-sensing-group
+  enables:
+    - geojson
+    - geotiff
+
+tags: [cloud, remote-sensing, satellite, analysis, big-data, google]
+keywords: [earth-engine, gee, satellite-imagery, time-series, machine-learning, planetary-scale]
+
+roleRelevance:
+  gis-analyst: 0.9
+  data-engineer: 0.8
+  gis-developer: 0.9
+
+resources:
+  - title: "Google Earth Engine Documentation"
+    url: "https://developers.google.com/earth-engine"
+    type: documentation
+  - title: "Earth Engine Code Editor"
+    url: "https://code.earthengine.google.com/"
+    type: tool
+
+lastUpdated: "2026-04-07"

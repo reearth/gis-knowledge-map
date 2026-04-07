@@ -1,0 +1,57 @@
+id: gpkg
+title: GeoPackage
+aliases: [GPKG, OGC GeoPackage]
+
+type: data-formats
+parentNode: data-formats-group
+difficulty: intermediate
+importance: important
+
+summary: A modern, open standard SQLite-based format for storing vector and raster geospatial data.
+description: |
+  GeoPackage is an OGC standard that uses SQLite as its container format. It was designed as
+  a modern replacement for Shapefiles, addressing many of their limitations.
+
+  A single .gpkg file can store multiple vector layers, raster datasets, tiles, attributes, and
+  spatial indexes. It supports transaction handling, has no file size limits, and can be used
+  on mobile devices. GeoPackage is increasingly becoming the preferred format for data exchange
+  in the GIS community.
+
+style:
+  color: "#EC4899"
+  icon: "database"
+
+relationships:
+  related:
+    - shapefile
+    - geojson
+    - geotiff
+    - mvt
+  usedBy:
+    - qgis
+    - gdal
+    - geoserver
+    - postgis
+    - felt
+
+tags: [vector, raster, sqlite, ogc, modern]
+keywords: [gpkg, sqlite, database, tiles, vector, raster, shapefile replacement]
+
+roleRelevance:
+  gis-analyst: 0.9
+  gis-developer: 0.9
+  cartographer: 0.7
+  data-engineer: 0.8
+
+resources:
+  - title: "OGC GeoPackage Standard"
+    url: "https://www.geopackage.org/"
+    type: reference
+  - title: "GeoPackage Specification"
+    url: "https://www.ogc.org/standard/geopackage/"
+    type: documentation
+  - title: "Switch from Shapefile to GeoPackage"
+    url: "http://switchfromshapefile.org/"
+    type: tutorial
+
+lastUpdated: "2026-04-07"

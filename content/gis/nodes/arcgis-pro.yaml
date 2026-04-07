@@ -1,0 +1,50 @@
+id: arcgis-pro
+title: ArcGIS Pro
+aliases: [ESRI ArcGIS Pro]
+
+type: desktop-gis-applications
+parentNode: desktop-gis-applications-group
+difficulty: intermediate
+importance: important
+
+summary: ESRI's modern 64-bit desktop GIS application with 2D/3D capabilities, replacing ArcMap.
+description: |
+  ArcGIS Pro is ESRI's flagship desktop GIS application, designed for professional mapping,
+  spatial analysis, and data management. Built from the ground up as a 64-bit application
+  with modern ribbon interface and native 3D support.
+
+  Offers advanced cartography, geoprocessing, spatial analysis, 3D visualization, integration
+  with ArcGIS Online/Enterprise, Python automation (arcpy), and ModelBuilder. Supports industry
+  standard formats and provides comprehensive GIS workflows. Subscription-based licensing.
+
+style:
+  color: "#3B82F6"
+  icon: "wrench"
+
+relationships:
+  related:
+    - qgis
+    - arcgis-server
+    - arcgis-online
+  enables:
+    - shapefile
+    - geojson
+
+tags: [desktop, commercial, esri, 3d, analysis]
+keywords: [arcgis-pro, esri, desktop-gis, arcpy, modelbuilder, cartography, 3d-mapping]
+
+roleRelevance:
+  gis-analyst: 1.0
+  cartographer: 1.0
+  gis-developer: 0.8
+  data-engineer: 0.6
+
+resources:
+  - title: "ArcGIS Pro Documentation"
+    url: "https://pro.arcgis.com/en/pro-app/latest/help/main/welcome-to-the-arcgis-pro-app-help.htm"
+    type: documentation
+  - title: "ArcGIS Pro Tutorials"
+    url: "https://pro.arcgis.com/en/pro-app/latest/get-started/pro-quickstart-tutorials.htm"
+    type: tutorial
+
+lastUpdated: "2026-04-07"

@@ -1,0 +1,46 @@
+id: topology
+title: Topology
+aliases: []
+
+type: core-concepts
+parentNode: core-concepts-group
+difficulty: intermediate
+importance: important
+
+summary: Spatial relationships between geographic features that describe how they are connected, adjacent, or contained.
+description: |
+  Spatial relationships between geographic features that describe how they are connected, adjacent, or contained. Topology defines rules about connectivity, adjacency, and containment while ensuring data integrity through constraints like no gaps, no overlaps, and shared boundaries.
+
+style:
+  color: "#64748B"
+  icon: "network"
+
+relationships:
+  enhances:
+    - vector-data
+  related: []
+
+tags:
+  - spatial-relationships
+  - data-quality
+  - network
+keywords:
+  - topology
+  - connectivity
+  - adjacency
+  - containment
+  - spatial relationships
+  - data integrity
+
+roleRelevance:
+  gis-analyst: 0.8
+  gis-developer: 1.0
+  cartographer: 0.7
+resources:
+  - title: Understanding Topology in GIS
+    url: https://www.esri.com/en-us/what-is-gis/overview
+    type: documentation
+  - title: Topology Rules and Error Fixing
+    url: https://docs.qgis.org/latest/en/docs/
+    type: tutorial
+lastUpdated: "2026-04-07"

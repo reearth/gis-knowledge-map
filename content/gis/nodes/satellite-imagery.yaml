@@ -1,0 +1,50 @@
+id: satellite-imagery
+title: Satellite Imagery
+aliases: [Earth Observation, Satellite Images, EO Data]
+
+type: remote-sensing
+parentNode: remote-sensing-group
+difficulty: intermediate
+importance: critical
+
+summary: Earth observation imagery from satellites like Landsat, Sentinel, Planet, and commercial providers.
+description: |
+  Satellite imagery provides systematic Earth observation from orbital platforms, enabling
+  monitoring of environmental change, land use, agriculture, disasters, and urban development.
+  Available from government (Landsat, Sentinel, MODIS) and commercial sources (Planet, Maxar).
+
+  Key satellites: Landsat (30m, free, 40+ years), Sentinel-2 (10m, free, ESA), MODIS (250m, daily),
+  Planet (3m, daily), Maxar/WorldView (30cm, commercial). Multispectral bands enable vegetation
+  analysis (NDVI), water detection, thermal monitoring. Accessible via Google Earth Engine,
+  AWS Open Data, and commercial APIs.
+
+style:
+  color: "#0EA5E9"
+  icon: "satellite-dish"
+
+relationships:
+  related:
+    - google-earth-engine
+    - spectral-analysis
+    - image-classification
+  enables:
+    - geotiff
+    - cog
+
+tags: [remote-sensing, satellite, earth-observation, multispectral, landsat]
+keywords: [landsat, sentinel, planet, modis, earth-observation, multispectral, temporal-analysis]
+
+roleRelevance:
+  gis-analyst: 1.0
+  data-engineer: 0.7
+  gis-developer: 0.6
+
+resources:
+  - title: "USGS Earth Explorer"
+    url: "https://earthexplorer.usgs.gov/"
+    type: tool
+  - title: "Copernicus Open Access Hub"
+    url: "https://scihub.copernicus.eu/"
+    type: reference
+
+lastUpdated: "2026-04-07"

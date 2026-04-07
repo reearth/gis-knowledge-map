@@ -1,0 +1,43 @@
+id: remote-sensing-group
+title: Remote Sensing
+aliases: [Earth Observation, Satellite Imagery]
+
+type: remote-sensing
+difficulty: advanced
+importance: important
+isGroup: true
+
+summary: The science of acquiring and analyzing information about Earth's surface using sensors on satellites or aircraft.
+description: |
+  Remote sensing involves obtaining information about objects or areas from a distance, typically
+  from satellites or aircraft. It's used for environmental monitoring, land use mapping, disaster
+  response, and many other applications. Combines imagery acquisition, image processing, and
+  geospatial analysis to extract meaningful information from satellite and aerial imagery.
+  Includes satellite imagery, aerial imagery, LiDAR, SAR, and processing techniques.
+
+style:
+  color: "#0EA5E9"
+  icon: "satellite"
+
+relationships:
+  prerequisites:
+    - spatial-reference-systems-group
+    - data-formats-group
+  enables:
+    - processing-tools-group
+    - analysis-libraries-group
+
+tags: [satellite, imagery, earth-observation, sensors]
+keywords: [landsat, sentinel, aerial, multispectral, radar]
+
+roleRelevance:
+  remote-sensing-specialist: 1.0
+  gis-analyst: 0.8
+  data-engineer: 0.6
+
+resources:
+  - title: "Introduction to Remote Sensing"
+    url: "https://www.earthdata.nasa.gov/learn/backgrounders/remote-sensing"
+    type: tutorial
+
+lastUpdated: "2026-04-06"

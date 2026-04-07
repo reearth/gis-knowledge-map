@@ -1,0 +1,44 @@
+id: spatial-databases-group
+title: Spatial Databases
+aliases: [Geodatabases, Spatial DBMS]
+
+type: spatial-databases
+difficulty: intermediate
+importance: critical
+isGroup: true
+
+summary: Database systems with extensions for storing, indexing, and querying geospatial data.
+description: |
+  Spatial databases extend traditional relational databases with capabilities for handling
+  geographic objects and spatial operations. They provide efficient storage, indexing, and
+  querying of spatial data using specialized data types and functions. Essential for
+  applications that need to store and query large volumes of geospatial data with complex
+  spatial relationships. Key examples include PostGIS, SpatiaLite, Oracle Spatial, and
+  DuckDB Spatial extension.
+
+style:
+  color: "#A855F7"
+  icon: "database"
+
+relationships:
+  prerequisites:
+    - spatial-reference-systems-group
+    - data-models-group
+  enables:
+    - gis-servers-services-group
+    - web-mapping-libraries-group
+
+tags: [database, spatial, backend, storage]
+keywords: [postgis, oracle, sql, spatial-index, geometry]
+
+roleRelevance:
+  gis-developer: 1.0
+  data-engineer: 1.0
+  gis-analyst: 0.7
+
+resources:
+  - title: "Spatial Databases Overview"
+    url: "https://en.wikipedia.org/wiki/Spatial_database"
+    type: reference
+
+lastUpdated: "2026-04-06"

@@ -1,0 +1,49 @@
+id: xyz-tiles
+title: XYZ Tiles
+aliases: [Slippy Map Tiles, XYZ Scheme]
+
+type: tile-delivery-systems
+parentNode: tile-delivery-systems-group
+difficulty: beginner
+importance: critical
+
+summary: Standard tile naming scheme using X, Y, Z coordinates for web map tiles (zoom/x/y.png).
+description: |
+  XYZ tiles are the most common tile naming convention used in web mapping. Files are organized
+  in a directory structure: {z}/{x}/{y}.png where Z is zoom level, X is column, and Y is row.
+
+  Origin is top-left corner, Y increases downward (unlike TMS). Used by OpenStreetMap, Mapbox,
+  Google Maps, and most web mapping libraries. Simple, efficient, and widely supported for both
+  raster and vector tiles. Standard format for tile-based web maps.
+
+style:
+  color: "#F59E0B"
+  icon: "grid-3x3"
+
+relationships:
+  related:
+    - tms
+    - raster-tiles
+    - vector-tiles
+  enables:
+    - leaflet
+    - mapbox-gl
+    - openlayers
+
+tags: [tiles, web-mapping, standard, scheme, coordinates]
+keywords: [xyz, slippy-map, zoom, tile-coordinates, web-mercator, tile-scheme]
+
+roleRelevance:
+  gis-developer: 1.0
+  gis-analyst: 0.6
+  data-engineer: 0.8
+
+resources:
+  - title: "Slippy Map Tilenames (OpenStreetMap Wiki)"
+    url: "https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames"
+    type: documentation
+  - title: "XYZ Tiles Specification"
+    url: "https://developers.google.com/maps/documentation/javascript/coordinates"
+    type: reference
+
+lastUpdated: "2026-04-07"

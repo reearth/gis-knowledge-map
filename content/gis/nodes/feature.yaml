@@ -1,0 +1,47 @@
+id: feature
+title: Feature
+aliases: []
+
+type: core-concepts
+parentNode: core-concepts-group
+difficulty: beginner
+importance: critical
+
+summary: A discrete geographic element representing a real-world object or phenomenon.
+description: |
+  A discrete geographic element representing a real-world object or phenomenon. Features have both spatial components (geometry) and non-spatial information (attributes). Examples include buildings (polygons), roads (lines), and wells (points).
+
+style:
+  color: "#64748B"
+  icon: "map-pin"
+
+relationships:
+  hasComponent:
+    - geometry
+    - attribute
+  partOf:
+    - vector-data
+
+tags:
+  - vector-data
+  - geometry
+  - attributes
+keywords:
+  - feature
+  - geographic object
+  - spatial entity
+  - map feature
+  - vector feature
+
+roleRelevance:
+  gis-analyst: 1.0
+  gis-developer: 1.0
+  cartographer: 0.9
+resources:
+  - title: Introduction to Vector Features
+    url: https://docs.qgis.org/latest/en/docs/
+    type: documentation
+  - title: Understanding Geographic Features
+    url: https://www.geography.org.uk/
+    type: tutorial
+lastUpdated: "2026-04-07"

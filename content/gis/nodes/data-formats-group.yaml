@@ -1,0 +1,45 @@
+id: data-formats-group
+title: Data Formats
+aliases: [File Formats, Spatial Formats, GIS Formats]
+
+type: data-formats
+difficulty: intermediate
+importance: critical
+isGroup: true
+
+summary: Standard file formats for storing and exchanging geospatial data.
+description: |
+  Data formats define how spatial information is structured and stored in files.
+  Different formats serve different purposes - some optimize for interchange (GeoJSON, KML),
+  others for analysis (Shapefile, GeoPackage), and some for specific use cases like
+  cloud-optimized delivery (COG, FlatGeobuf). Choosing the right format impacts performance,
+  compatibility, and functionality.
+
+style:
+  color: "#EC4899"
+  icon: "file-code"
+
+relationships:
+  prerequisites:
+    - data-models-group
+    - spatial-reference-systems-group
+  enables:
+    - processing-tools-group
+    - web-mapping-libraries-group
+    - desktop-gis-applications-group
+
+tags: [formats, files, interchange, storage]
+keywords: [geojson, shapefile, geotiff, gpkg]
+
+roleRelevance:
+  gis-analyst: 1.0
+  gis-developer: 1.0
+  cartographer: 0.8
+  data-engineer: 1.0
+
+resources:
+  - title: "Common GIS File Formats"
+    url: "https://gisgeography.com/gis-formats/"
+    type: reference
+
+lastUpdated: "2026-04-07"

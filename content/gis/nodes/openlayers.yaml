@@ -1,0 +1,39 @@
+id: openlayers
+title: OpenLayers
+aliases: [OL, OpenLayers 3]
+
+type: web-mapping-libraries
+parentNode: web-mapping-libraries-group
+difficulty: intermediate
+importance: important
+
+summary: A high-performance JavaScript library for displaying map data in web browsers.
+description: |
+  OpenLayers makes it easy to put a dynamic map in any web page. It can display map tiles, vector data
+  and markers loaded from any source. It's been developed to further the use of geographic information
+  of all kinds and is completely free, open source JavaScript.
+
+  Supports a wide variety of data sources and formats including WMS, WMTS, XYZ, Vector Tiles, and more.
+
+style:
+  color: "#FB923C"
+  icon: "layers"
+
+relationships:
+  related:
+    - leaflet
+    - mapbox-gl
+
+tags: [javascript, web, maps, open-source]
+keywords: [wms, wmts, vector, tiles, interaction]
+
+roleRelevance:
+  gis-developer: 1.0
+  gis-analyst: 0.5
+
+resources:
+  - title: "OpenLayers Documentation"
+    url: "https://openlayers.org/"
+    type: documentation
+
+lastUpdated: "2026-04-06"

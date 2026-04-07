@@ -1,0 +1,38 @@
+id: kml
+title: KML
+aliases: [Keyhole Markup Language, KMZ]
+
+type: data-formats
+parentNode: data-formats-group
+difficulty: beginner
+importance: useful
+
+summary: An XML-based format for geographic data visualization, originally created for Google Earth.
+description: |
+  KML (Keyhole Markup Language) is an XML notation for expressing geographic annotation and visualization
+  within Internet-based maps and Earth browsers like Google Earth.
+
+  KMZ is a compressed version of KML that can include images and other resources in a single archive.
+
+style:
+  color: "#EC4899"
+  icon: "file-code"
+
+relationships:
+  related:
+    - geojson
+    - shapefile
+
+tags: [xml, google-earth, visualization]
+keywords: [google, earth, placemark, kmz]
+
+roleRelevance:
+  gis-analyst: 0.7
+  gis-developer: 0.6
+
+resources:
+  - title: "KML Tutorial"
+    url: "https://developers.google.com/kml/documentation/kml_tut"
+    type: tutorial
+
+lastUpdated: "2026-04-06"

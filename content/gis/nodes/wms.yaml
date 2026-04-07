@@ -1,0 +1,49 @@
+id: wms
+title: WMS
+aliases: [Web Map Service, OGC WMS]
+
+type: gis-servers-services
+parentNode: gis-servers-services-group
+difficulty: intermediate
+importance: critical
+
+summary: OGC standard for serving georeferenced map images over HTTP (PNG, JPEG, GIF).
+description: |
+  Web Map Service (WMS) is an OGC standard protocol for requesting georeferenced map images
+  from a server. The server generates maps dynamically from spatial data, returning rendered
+  images in formats like PNG or JPEG.
+
+  Supports GetMap (retrieve map image), GetCapabilities (service metadata), and GetFeatureInfo
+  (query features). Clients specify bounding box, projection, layers, and styling. Widely
+  supported by GeoServer, MapServer, QGIS, and web mapping libraries.
+
+style:
+  color: "#F97316"
+  icon: "image"
+
+relationships:
+  related:
+    - wfs
+    - wmts
+  enables:
+    - geoserver
+    - mapserver
+    - qgis
+
+tags: [ogc, standard, web-service, raster, protocol]
+keywords: [wms, getmap, getcapabilities, getfeatureinfo, ogc-standard, map-image]
+
+roleRelevance:
+  gis-developer: 1.0
+  gis-analyst: 0.7
+  data-engineer: 0.7
+
+resources:
+  - title: "OGC WMS Specification"
+    url: "https://www.ogc.org/standards/wms"
+    type: documentation
+  - title: "WMS in GeoServer"
+    url: "https://docs.geoserver.org/latest/en/user/services/wms/index.html"
+    type: reference
+
+lastUpdated: "2026-04-07"

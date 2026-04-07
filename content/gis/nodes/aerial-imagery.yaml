@@ -1,0 +1,49 @@
+id: aerial-imagery
+title: Aerial Imagery
+aliases: [Aerial Photography, Orthophotos, Drone Imagery]
+
+type: remote-sensing
+parentNode: remote-sensing-group
+difficulty: beginner
+importance: important
+
+summary: High-resolution imagery from aircraft and drones for detailed mapping and surveying.
+description: |
+  Aerial imagery captures high-resolution photographs from aircraft or drones (UAVs),
+  providing detailed views for mapping, surveying, planning, and monitoring at local scales.
+  Much higher resolution than satellite imagery but limited geographic coverage.
+
+  Aircraft imagery: typically 10-50cm resolution, flown by government/commercial providers
+  (USGS, commercial surveyors). Drone imagery: 1-5cm resolution, on-demand, cost-effective
+  for small areas. Requires orthorectification for accurate measurements. Used in urban
+  planning, construction, agriculture, and asset inspection.
+
+style:
+  color: "#0EA5E9"
+  icon: "plane"
+
+relationships:
+  related:
+    - satellite-imagery
+    - orthorectification
+    - lidar
+  enables:
+    - geotiff
+
+tags: [remote-sensing, aerial, drones, uav, high-resolution, photography]
+keywords: [aerial-photography, orthophotos, uav, drones, photogrammetry, surveying]
+
+roleRelevance:
+  gis-analyst: 0.9
+  cartographer: 0.8
+  gis-developer: 0.5
+
+resources:
+  - title: "USGS National Map Viewer (Aerial Imagery)"
+    url: "https://apps.nationalmap.gov/viewer/"
+    type: tool
+  - title: "Drone Mapping Basics"
+    url: "https://www.pix4d.com/industry/mapping"
+    type: tutorial
+
+lastUpdated: "2026-04-07"

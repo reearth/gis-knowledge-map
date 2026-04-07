@@ -1,0 +1,54 @@
+id: fiona
+title: Fiona
+aliases: [fiona library]
+
+type: processing-tools
+parentNode: processing-tools-group
+difficulty: intermediate
+importance: important
+
+summary: Python library for reading and writing vector geospatial data, providing a clean OGR/GDAL interface.
+description: |
+  Fiona is a Python wrapper for OGR that makes reading and writing vector geospatial data more
+  intuitive and Pythonic. It focuses on providing a simple, consistent interface for working with
+  vector formats without requiring knowledge of the underlying OGR/GDAL complexity.
+
+  Fiona represents features as Python dictionaries compatible with the GeoJSON standard, making it
+  easy to work with common Python tools. It's commonly used alongside GeoPandas for vector data
+  manipulation and is the I/O foundation for many Python GIS workflows.
+
+style:
+  color: "#14B8A6"
+  icon: "wrench"
+
+relationships:
+  basedOn:
+    - ogr
+    - gdal
+  supports:
+    - shapefile
+    - geojson
+    - geopackage
+    - kml
+  usedBy:
+    - geopandas
+  integrates:
+    - python
+
+tags: [python, vector, library, open-source]
+keywords: [vector io, shapefile, geojson, python library, ogr wrapper]
+
+roleRelevance:
+  gis-developer: 1.0
+  data-engineer: 0.9
+  gis-analyst: 0.7
+
+resources:
+  - title: "Fiona Documentation"
+    url: "https://fiona.readthedocs.io/"
+    type: documentation
+  - title: "Fiona GitHub"
+    url: "https://github.com/Toblerity/Fiona"
+    type: reference
+
+lastUpdated: "2026-04-07"

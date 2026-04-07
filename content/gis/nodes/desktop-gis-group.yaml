@@ -1,0 +1,42 @@
+id: desktop-gis-applications-group
+title: Desktop GIS Applications
+aliases: [Desktop GIS, GIS Software]
+
+type: desktop-gis-applications
+difficulty: intermediate
+importance: critical
+isGroup: true
+
+summary: Professional desktop applications for comprehensive GIS analysis, cartography, and spatial data management.
+description: |
+  Desktop GIS applications provide full-featured environments for working with geospatial data.
+  They offer comprehensive tools for data editing, spatial analysis, cartography, and geoprocessing.
+  These applications are typically used by GIS professionals for complex analytical tasks and
+  professional map production. Major applications include QGIS (open-source), ArcGIS Pro (commercial),
+  and GRASS GIS (academic/scientific).
+
+style:
+  color: "#3B82F6"
+  icon: "monitor"
+
+relationships:
+  prerequisites:
+    - spatial-reference-systems-group
+    - data-formats-group
+    - data-models-group
+
+tags: [desktop, software, gis, professional]
+keywords: [application, analysis, cartography, editing, qgis, arcgis]
+
+roleRelevance:
+  gis-analyst: 1.0
+  gis-developer: 0.8
+  cartographer: 1.0
+  data-engineer: 0.7
+
+resources:
+  - title: "GIS Software Comparison"
+    url: "https://gisgeography.com/gis-software/"
+    type: reference
+
+lastUpdated: "2026-04-07"

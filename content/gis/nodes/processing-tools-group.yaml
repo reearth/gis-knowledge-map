@@ -1,0 +1,44 @@
+id: processing-tools-group
+title: Processing Tools
+aliases: [Data Processing, CLI Tools, Conversion Tools]
+
+type: processing-tools
+difficulty: intermediate
+importance: important
+isGroup: true
+
+summary: Command-line tools and libraries for processing, converting, and transforming geospatial data.
+description: |
+  Processing tools are essential utilities for working with geospatial data at scale.
+  They handle tasks like format conversion, reprojection, clipping, merging, and optimization.
+  Tools like GDAL, OGR, and Tippecanoe are fundamental for data preparation pipelines,
+  ETL workflows, and backend processing. These are typically command-line tools used
+  in scripts and automation.
+
+style:
+  color: "#14B8A6"
+  icon: "wrench"
+
+relationships:
+  prerequisites:
+    - data-formats-group
+    - spatial-reference-systems-group
+  enables:
+    - tile-delivery-systems-group
+    - web-mapping-libraries-group
+    - desktop-gis-applications-group
+
+tags: [processing, conversion, cli, transformation]
+keywords: [gdal, ogr, rasterio, fiona, tippecanoe]
+
+roleRelevance:
+  gis-analyst: 0.7
+  gis-developer: 1.0
+  data-engineer: 1.0
+
+resources:
+  - title: "GDAL Documentation"
+    url: "https://gdal.org/"
+    type: documentation
+
+lastUpdated: "2026-04-07"

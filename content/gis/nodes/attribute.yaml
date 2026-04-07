@@ -1,0 +1,45 @@
+id: attribute
+title: Attribute
+aliases: []
+
+type: core-concepts
+parentNode: core-concepts-group
+difficulty: beginner
+importance: critical
+
+summary: Non-spatial information associated with a geographic feature, stored in tabular format.
+description: |
+  Non-spatial information associated with a geographic feature, stored in tabular format. Attributes describe the characteristics, properties, or qualities of features, such as name, population, elevation, or classification. They enable queries, analysis, and thematic mapping.
+
+style:
+  color: "#64748B"
+  icon: "tag"
+
+relationships:
+  partOf:
+    - feature
+  related: []
+
+tags:
+  - data-model
+  - feature-properties
+  - database
+keywords:
+  - attribute
+  - attribute table
+  - feature properties
+  - descriptive data
+  - tabular data
+
+roleRelevance:
+  gis-analyst: 1.0
+  gis-developer: 0.9
+  cartographer: 0.8
+resources:
+  - title: Attribute Data in GIS
+    url: https://www.esri.com/en-us/what-is-gis/overview
+    type: documentation
+  - title: Working with Attribute Tables
+    url: https://docs.qgis.org/latest/en/docs/
+    type: tutorial
+lastUpdated: "2026-04-07"

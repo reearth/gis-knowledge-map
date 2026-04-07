@@ -1,0 +1,53 @@
+id: cog
+title: Cloud Optimized GeoTIFF
+aliases: [COG]
+
+type: data-formats
+parentNode: data-formats-group
+difficulty: intermediate
+importance: important
+
+summary: A GeoTIFF variant with internal tiling and overviews optimized for efficient cloud-based access.
+description: |
+  Cloud Optimized GeoTIFF (COG) is a regular GeoTIFF file with a specific internal organization
+  that enables efficient streaming and partial reading from cloud storage without downloading the entire file.
+
+  COGs use internal tiling, overviews (pyramids), and HTTP range requests to allow clients to fetch
+  only the data they need. This makes them ideal for web mapping, serverless architectures, and
+  working with large datasets stored in cloud object storage like S3 or GCS.
+
+style:
+  color: "#EC4899"
+  icon: "file-code"
+
+relationships:
+  related:
+    - geotiff
+    - mvt
+  usedBy:
+    - gdal
+    - qgis
+    - mapbox-gl
+    - deck-gl
+
+tags: [raster, cloud, tiling, optimization]
+keywords: [cloud, streaming, http range requests, overviews, pyramids]
+
+roleRelevance:
+  gis-analyst: 0.7
+  gis-developer: 0.9
+  data-engineer: 0.9
+  remote-sensing-specialist: 0.9
+
+resources:
+  - title: "COG Specification"
+    url: "https://www.cogeo.org/"
+    type: reference
+  - title: "GDAL COG Driver Documentation"
+    url: "https://gdal.org/drivers/raster/cog.html"
+    type: documentation
+  - title: "Guide to Cloud Optimized GeoTIFFs"
+    url: "https://developers.planet.com/docs/planetschool/an-introduction-to-cloud-optimized-geotiffs-cogs-part-1-overview/"
+    type: tutorial
+
+lastUpdated: "2026-04-07"

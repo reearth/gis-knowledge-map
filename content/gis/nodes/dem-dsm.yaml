@@ -1,0 +1,81 @@
+id: dem-dsm
+title: DEM/DSM
+aliases: []
+
+type: data-models
+parentNode: data-models-group
+difficulty: intermediate
+importance: critical
+
+summary: Digital Elevation Model (bare earth surface) and Digital Surface Model (top surface including vegetation and structures) - raster representations of terrain and surface heights.
+description: |
+  Digital Elevation Models (DEMs) and Digital Surface Models (DSMs) are specialized raster datasets
+  representing surface heights. A DEM represents the bare earth terrain elevation (ground surface
+  without vegetation or structures), while a DSM represents the top surface including trees,
+  buildings, and other features. DTM (Digital Terrain Model) is another term often used
+  interchangeably with DEM.
+
+  These models are fundamental for terrain analysis, including slope/aspect calculation, watershed
+  delineation, viewshed analysis, 3D visualization, and hydrological modeling. DEMs are created
+  from contour lines, survey data, photogrammetry, or LiDAR point clouds. Common formats include
+  GeoTIFF, USGS DEM, and SRTM. Resolution ranges from global datasets (~30-90m) to high-resolution
+  local surveys (<1m).
+
+style:
+  color: "#8B5CF6"
+  icon: "mountain"
+
+relationships:
+  partOf:
+    - raster-grid
+  derivedFrom:
+    - point-cloud
+    - photogrammetry
+  related:
+    - lidar
+    - satellite-imagery
+
+tags: [elevation, terrain, DEM, DSM, topography]
+keywords: [DEM, DSM, DTM, elevation, terrain, topography]
+
+roleRelevance:
+  gis-analyst: 0.9
+  cartographer: 0.85
+  remote-sensing-specialist: 0.85
+  urban-planner: 0.8
+  environmental-scientist: 0.95
+  gis-developer: 0.75
+
+resources:
+  - title: "USGS 3D Elevation Program (3DEP)"
+    url: "https://www.usgs.gov/3d-elevation-program"
+    type: reference
+  - title: "GDAL DEM Tools"
+    url: "https://gdal.org/programs/gdaldem.html"
+    type: documentation
+  - title: "QGIS Raster Terrain Analysis"
+    url: "https://docs.qgis.org/latest/en/docs/user_manual/working_with_raster/raster_analysis.html"
+    type: documentation
+  - title: "Working with Digital Elevation Models"
+    url: "https://www.qgistutorials.com/en/docs/working_with_terrain.html"
+    type: tutorial
+  - title: "Generating DEMs from Point Clouds"
+    url: "https://pdal.io/en/latest/tutorial/pcl_block_tutorial.html"
+    type: tutorial
+  - title: "Terrain Analysis with Python"
+    url: "https://www.earthdatascience.org/courses/use-data-open-source-python/data-stories/what-is-lidar-data/lidar-dem-hillshade/"
+    type: tutorial
+  - title: "QGIS Terrain Analysis Tools"
+    url: "https://docs.qgis.org/latest/en/docs/user_manual/processing_algs/qgis/rasterterrainanalysis.html"
+    type: tool
+  - title: "WhiteboxTools"
+    url: "https://www.whiteboxgeo.com/manual/wbt_book/intro.html"
+    type: tool
+  - title: "RichDEM"
+    url: "https://github.com/r-barnes/richdem"
+    type: tool
+  - title: "OpenTopography"
+    url: "https://opentopography.org/"
+    type: tool
+
+lastUpdated: "2026-04-07"

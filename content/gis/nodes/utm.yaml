@@ -1,0 +1,122 @@
+id: utm
+title: Universal Transverse Mercator (UTM)
+aliases: []
+
+type: spatial-reference-systems
+parentNode: spatial-reference-systems-group
+difficulty: intermediate
+importance: important
+estimatedTime: 40 minutes
+
+summary: Universal Transverse Mercator (UTM) is a global coordinate system that divides Earth into 60 north-south zones, each 6 degrees of longitude wide.
+description: >
+  Universal Transverse Mercator (UTM) is a global coordinate system that divides Earth into 60 north-south zones, each 6 degrees of longitude wide. Each zone uses a transverse Mercator projection optimized for that region, providing accurate metric coordinates with minimal distortion. UTM is widely used for topographic mapping, military grids, and regional spatial analysis due to its standardization and meter-based units.
+
+style:
+  color: "#10B981"
+  icon: "map-pin"
+
+topics:
+  - UTM zone structure (60 zones, 6-degree width)
+  - Zone numbering and lettering (1-60, C-X)
+  - Transverse Mercator projection per zone
+  - False easting (500,000m) and false northing (0m North, 10,000,000m South)
+  - Central meridian and scale factor (0.9996)
+  - Coordinate format (zone + easting + northing)
+  - UTM zone selection and overlap handling
+
+prerequisites:
+  - crs
+  - datum
+  - map-projection
+  - coordinate-systems
+
+relationships:
+  related:
+    - wgs84
+    - epsg-codes
+    - map-projection
+    - reprojection
+
+learningOutcomes:
+  - Determine the correct UTM zone for any location
+  - Read and write UTM coordinates correctly
+  - Understand UTM distortion characteristics and limitations
+  - Convert between geographic coordinates and UTM
+  - Recognize when to use UTM vs other coordinate systems
+
+roleRelevance:
+  gis-analyst: 0.9
+  surveyor: 0.9
+  gis-developer: 0.8
+  cartographer: 0.8
+  environmental-scientist: 0.8
+  geospatial-data-scientist: 0.7
+
+resources:
+  - title: "UTM Grid - USGS"
+    url: "https://www.usgs.gov/faqs/what-does-term-utm-mean-utm-better-or-more-accurate-latitudelongitude"
+    type: reference
+  - title: "UTM Zones - epsg.io"
+    url: "https://epsg.io/?q=utm"
+    type: reference
+  - title: "Understanding UTM - QGIS"
+    url: "https://docs.qgis.org/latest/en/docs/gentle_gis_introduction/coordinate_reference_systems.html#universal-transverse-mercator-utm-crs-in-detail"
+    type: documentation
+  - title: "UTM Coordinate System Explained"
+    url: "https://www.maptools.com/tutorials/grid_zone_details"
+    type: tutorial
+  - title: "Working with UTM in GIS"
+    url: "https://www.e-education.psu.edu/geog862/node/1803"
+    type: tutorial
+  - title: "UTM Coordinate System Overview"
+    url: "https://www.youtube.com/watch?v=XxK3B6FmKPg"
+    type: video
+
+practicalExercises:
+  - Calculate the UTM zone for your city or project area
+  - Convert lat/lon coordinates to UTM using GDAL or online tools
+  - Measure accurate distances using UTM coordinates
+  - Compare distortion between adjacent UTM zones
+  - Handle datasets spanning multiple UTM zones
+
+commonMistakes:
+  - Using wrong UTM zone for the area of interest
+  - Not specifying northern vs southern hemisphere
+  - Mixing coordinates from different UTM zones
+  - Using UTM for areas spanning multiple zones without reprojection
+  - Confusing UTM with MGRS (Military Grid Reference System)
+  - Applying UTM in polar regions (>84°N or >80°S)
+
+realWorldApplications:
+  - Topographic and cadastral mapping worldwide
+  - GPS navigation and military operations (MGRS based on UTM)
+  - Engineering projects requiring metric precision
+  - Environmental monitoring and natural resource management
+  - Archaeological site mapping and excavation grids
+
+advancedTopics:
+  - UTM zone overlap and transitional zones
+  - Scale factor variation within zones
+  - UTM in different datum contexts (WGS84-UTM vs NAD83-UTM)
+  - Custom transverse Mercator projections vs standard UTM
+  - Polar stereographic alternatives for polar regions
+
+technicalDetails:
+  zoneWidth: "6 degrees longitude"
+  zones: "60 (numbered 1-60 from 180°W eastward)"
+  latitudeBands: "C-X (excluding I and O), 8° each"
+  falseEasting: "500,000 meters"
+  falseNorthing: "0m (Northern), 10,000,000m (Southern)"
+  scaleFactor: "0.9996 at central meridian"
+  coverage: "84°N to 80°S"
+
+tags:
+  - utm
+  - transverse-mercator
+  - coordinate-systems
+  - metric-grid
+  - zones
+  - topographic-mapping
+
+lastUpdated: "2026-04-07"

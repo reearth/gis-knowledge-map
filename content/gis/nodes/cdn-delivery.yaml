@@ -1,0 +1,49 @@
+id: cdn-delivery
+title: CDN Delivery
+aliases: [Content Delivery Network, Tile CDN, Map CDN]
+
+type: tile-delivery-systems
+parentNode: tile-delivery-systems-group
+difficulty: intermediate
+importance: important
+
+summary: Content Delivery Networks for distributing map tiles globally with low latency and high availability.
+description: |
+  CDNs distribute map tiles across geographically dispersed edge servers, reducing latency
+  by serving content from locations nearest to users. Critical for global map applications
+  requiring fast, reliable tile delivery.
+
+  Popular providers: Cloudflare, AWS CloudFront, Fastly, Azure CDN. Benefits include reduced
+  origin server load, automatic failover, DDoS protection, and global scalability. Essential
+  for production web mapping applications with international users.
+
+style:
+  color: "#F59E0B"
+  icon: "cloud-upload"
+
+relationships:
+  prerequisites:
+    - tile-cache
+  related:
+    - xyz-tiles
+  enables:
+    - leaflet
+    - mapbox-gl
+
+tags: [cdn, delivery, performance, global, infrastructure]
+keywords: [cloudflare, aws-cloudfront, edge-servers, latency, availability, scalability]
+
+roleRelevance:
+  gis-developer: 0.8
+  data-engineer: 1.0
+  gis-analyst: 0.2
+
+resources:
+  - title: "Cloudflare for Map Tiles"
+    url: "https://www.cloudflare.com/"
+    type: tool
+  - title: "AWS CloudFront Documentation"
+    url: "https://docs.aws.amazon.com/cloudfront/"
+    type: documentation
+
+lastUpdated: "2026-04-07"

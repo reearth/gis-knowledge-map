@@ -1,0 +1,48 @@
+id: mapbox-gl
+title: Mapbox GL JS
+aliases: [Mapbox GL, Mapbox]
+
+type: web-mapping-libraries
+parentNode: web-mapping-libraries-group
+difficulty: intermediate
+importance: important
+
+summary: A JavaScript library for interactive, customizable vector maps using WebGL.
+description: |
+  Mapbox GL JS is a JavaScript library for vector maps on the Web. It uses WebGL to
+  render interactive maps from vector tiles and Mapbox styles. It's part of the
+  Mapbox GL ecosystem for building mapping applications.
+
+
+style:
+  color: "#FB923C"
+  icon: "layers"
+
+relationships:
+  prerequisites:
+    - mvt
+    - geojson
+  related:
+    - leaflet
+    - openlayers
+    - deck-gl
+    - cesium
+
+tags: [javascript, webgl, vector-tiles, interactive]
+keywords: [Mapbox, GL JS, vector maps, WebGL]
+
+roleRelevance:
+  gis-analyst: 0.5
+  gis-developer: 1.0
+  cartographer: 0.7
+  data-engineer: 0.8
+
+resources:
+  - title: "Mapbox GL JS Documentation"
+    url: "https://docs.mapbox.com/mapbox-gl-js"
+    type: documentation
+  - title: "Mapbox GL JS Examples"
+    url: "https://docs.mapbox.com/mapbox-gl-js/example"
+    type: tutorial
+
+lastUpdated: "2026-04-06"

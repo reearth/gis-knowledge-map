@@ -1,0 +1,81 @@
+id: 3d-tiles
+title: 3D Tiles
+aliases: []
+
+type: data-models
+parentNode: data-models-group
+difficulty: advanced
+importance: important
+
+summary: OGC standard for streaming and rendering massive 3D geospatial datasets including buildings, point clouds, photogrammetry models, and terrain in web and desktop applications.
+description: |
+  3D Tiles is an OGC Community Standard for sharing, visualizing, and interacting with massive
+  heterogeneous 3D geospatial content across desktop, web, and mobile applications. It uses a
+  hierarchical level-of-detail structure to efficiently stream and render billions of 3D features
+  by loading only visible tiles at appropriate detail levels.
+
+  3D Tiles supports multiple content types: photogrammetry models (meshes), 3D buildings (BIM/CityGML),
+  point clouds, instanced features, and composite tiles. The format uses spatial indexing and
+  bounding volume hierarchies to enable fast visibility culling and progressive loading. It's
+  designed for visualization of urban environments, digital twins, infrastructure projects,
+  and large-scale 3D mapping applications. CesiumJS is the primary viewer implementation.
+
+style:
+  color: "#8B5CF6"
+  icon: "cube"
+
+relationships:
+  canEncode:
+    - point-cloud
+  requires:
+    - coordinate-systems
+  related:
+    - cesium
+
+tags: [3d, tiles, streaming, visualization]
+keywords: [3D Tiles, streaming, LOD, CesiumJS, 3D visualization]
+
+roleRelevance:
+  gis-analyst: 0.6
+  cartographer: 0.7
+  remote-sensing-specialist: 0.7
+  urban-planner: 0.85
+  environmental-scientist: 0.6
+  gis-developer: 0.95
+
+resources:
+  - title: "OGC 3D Tiles Specification"
+    url: "https://www.ogc.org/standards/3DTiles"
+    type: reference
+  - title: "CesiumJS 3D Tiles Guide"
+    url: "https://cesium.com/learn/cesiumjs/ref-doc/Cesium3DTileset.html"
+    type: documentation
+  - title: "3D Tiles on GitHub"
+    url: "https://github.com/CesiumGS/3d-tiles"
+    type: reference
+  - title: "Getting Started with 3D Tiles"
+    url: "https://cesium.com/learn/cesiumjs-learn/cesiumjs-3d-tiles/"
+    type: tutorial
+  - title: "Creating 3D Tiles from Point Clouds"
+    url: "https://github.com/CesiumGS/3d-tiles/tree/main/tools"
+    type: tutorial
+  - title: "Building 3D Tiles Pipelines"
+    url: "https://cesium.com/learn/3d-tiling/"
+    type: tutorial
+  - title: "Cesium ion"
+    url: "https://cesium.com/platform/cesium-ion/"
+    type: tool
+  - title: "CesiumJS"
+    url: "https://cesium.com/platform/cesiumjs/"
+    type: tool
+  - title: "py3dtiles"
+    url: "https://github.com/bimdata/py3dtiles"
+    type: tool
+  - title: "3d-tiles-tools"
+    url: "https://github.com/CesiumGS/3d-tiles-tools"
+    type: tool
+  - title: "FME 3D Tiles Support"
+    url: "https://www.safe.com/fme/"
+    type: tool
+
+lastUpdated: "2026-04-07"

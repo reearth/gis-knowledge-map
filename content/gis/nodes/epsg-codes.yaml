@@ -1,0 +1,147 @@
+id: epsg-codes
+title: EPSG Codes
+aliases: []
+
+type: spatial-reference-systems
+parentNode: spatial-reference-systems-group
+difficulty: intermediate
+importance: important
+estimatedTime: 30 minutes
+
+summary: EPSG codes are standardized numeric identifiers for coordinate reference systems (CRS) maintained by the EPSG Geodetic Parameter Dataset.
+description: >
+  EPSG codes are standardized numeric identifiers for coordinate reference systems (CRS) maintained by the EPSG Geodetic Parameter Dataset. Each code uniquely identifies a specific combination of datum, coordinate system, and projection. Using EPSG codes ensures consistent spatial reference across GIS software and prevents ambiguity in geospatial data exchange. Common codes include EPSG:4326 (WGS84), EPSG:3857 (Web Mercator), and thousands of regional CRS.
+
+style:
+  color: "#10B981"
+  icon: "hash"
+
+topics:
+  - EPSG database structure and maintenance
+  - Common EPSG codes (4326, 3857, UTM zones)
+  - EPSG code lookup and search
+  - Geographic vs projected CRS codes
+  - Deprecated and superseded codes
+  - EPSG vs other identifiers (OGC URNs, PROJ strings, WKT)
+  - Regional and national CRS codes
+
+prerequisites:
+  - crs
+  - datum
+  - map-projection
+  - coordinate-systems
+
+relationships:
+  related:
+    - wgs84
+    - web-mercator
+    - utm
+    - reprojection
+    - crs
+
+learningOutcomes:
+  - Look up and identify EPSG codes for any location
+  - Understand the structure of common EPSG code ranges
+  - Use EPSG codes in GIS software and geospatial libraries
+  - Recognize and avoid deprecated EPSG codes
+  - Convert between EPSG codes and other CRS representations
+
+roleRelevance:
+  gis-developer: 1.0
+  gis-analyst: 0.9
+  geospatial-data-scientist: 0.9
+  cartographer: 0.8
+  remote-sensing-specialist: 0.8
+
+resources:
+  - title: "EPSG.io - Coordinate Systems Database"
+    url: "https://epsg.io/"
+    type: reference
+  - title: "EPSG Geodetic Parameter Registry"
+    url: "https://epsg.org/"
+    type: reference
+  - title: "spatialreference.org - CRS Database"
+    url: "https://spatialreference.org/"
+    type: reference
+  - title: "Understanding EPSG Codes"
+    url: "https://www.nceas.ucsb.edu/sites/default/files/2020-04/OverviewCoordinateReferenceSystems.pdf"
+    type: tutorial
+  - title: "EPSG Codes in Python (pyproj)"
+    url: "https://pyproj4.github.io/pyproj/stable/api/crs/crs.html"
+    type: tutorial
+  - title: "What are EPSG Codes?"
+    url: "https://www.youtube.com/watch?v=E0JG3RHmLT4"
+    type: video
+
+practicalExercises:
+  - Look up EPSG codes for your region on epsg.io
+  - Identify the EPSG code of existing spatial datasets
+  - Set EPSG codes for datasets with missing CRS metadata
+  - Compare different representations of the same CRS (EPSG, WKT, PROJ)
+  - Find appropriate regional EPSG codes for local projects
+
+commonEPSGCodes:
+  - code: "EPSG:4326"
+    name: "WGS 84 - Geographic"
+    description: "Global latitude/longitude in decimal degrees"
+  - code: "EPSG:3857"
+    name: "WGS 84 / Pseudo-Mercator"
+    description: "Web Mercator (Google Maps, OSM)"
+  - code: "EPSG:4269"
+    name: "NAD83 - Geographic"
+    description: "North American Datum 1983"
+  - code: "EPSG:32601-32660"
+    name: "WGS 84 / UTM zones 1-60 North"
+    description: "UTM Northern Hemisphere"
+  - code: "EPSG:32701-32760"
+    name: "WGS 84 / UTM zones 1-60 South"
+    description: "UTM Southern Hemisphere"
+  - code: "EPSG:3395"
+    name: "WGS 84 / World Mercator"
+    description: "True Mercator (ellipsoidal)"
+  - code: "EPSG:2154"
+    name: "RGF93 / Lambert-93"
+    description: "France official projection"
+  - code: "EPSG:27700"
+    name: "OSGB 1936 / British National Grid"
+    description: "UK official grid"
+
+commonMistakes:
+  - Using deprecated EPSG codes (e.g., EPSG:3785 instead of 3857)
+  - Confusing EPSG:4326 (geographic) with EPSG:3857 (projected)
+  - Not specifying EPSG code when sharing geospatial data
+  - Assuming EPSG codes are interchangeable
+  - Using informal/non-standard codes (EPSG:900913)
+
+realWorldApplications:
+  - Geospatial data metadata and file headers (GeoTIFF, GeoJSON)
+  - Web mapping APIs and services (specify input/output CRS)
+  - Database spatial columns (PostGIS SRID values)
+  - Coordinate transformation in GDAL, PROJ, pyproj
+  - Cross-platform GIS data exchange
+
+advancedTopics:
+  - EPSG database structure and SQL access
+  - Creating custom EPSG codes for organizational use
+  - EPSG vs ESRI CRS differences
+  - OGC WKT and CRS representation standards
+  - Vertical CRS and compound CRS EPSG codes
+  - EPSG code deprecation and supersession chains
+
+toolSupport:
+  - QGIS: Built-in EPSG database and CRS selector
+  - GDAL/OGR: "-s_srs EPSG:4326 -t_srs EPSG:3857"
+  - PostGIS: "ST_Transform(geom, 3857)"
+  - pyproj: "CRS.from_epsg(4326)"
+  - PROJ: "+init=epsg:4326"
+  - Leaflet: "crs: L.CRS.EPSG3857"
+
+tags:
+  - epsg
+  - coordinate-systems
+  - spatial-reference
+  - standards
+  - metadata
+  - crs-identifiers
+
+lastUpdated: "2026-04-07"

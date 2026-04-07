@@ -1,0 +1,56 @@
+id: las-laz
+title: LAS/LAZ
+aliases: [LAS, LAZ, LIDAR Data Format]
+
+type: data-formats
+parentNode: data-formats-group
+difficulty: advanced
+importance: important
+
+summary: Industry-standard point cloud data format for LIDAR with compressed LAZ variant.
+description: |
+  LAS (LASer) is the industry-standard binary format for storing 3D point cloud data, particularly
+  from LIDAR sensors. It stores XYZ coordinates along with attributes like intensity, return number,
+  classification, RGB color, and GPS timestamps.
+
+  LAZ is a losslessly compressed version of LAS, typically achieving 7-20x compression ratios
+  while maintaining full data fidelity. LAZ files can be read directly without decompression by
+  most modern tools. Both formats are widely used in surveying, forestry, urban planning,
+  autonomous vehicles, and 3D city modeling.
+
+style:
+  color: "#EC4899"
+  icon: "box"
+
+relationships:
+  related:
+    - geotiff
+    - cog
+  usedBy:
+    - gdal
+    - qgis
+    - postgis
+    - cesium
+
+tags: [point-cloud, lidar, 3d, binary]
+keywords: [lidar, point cloud, xyz, classification, intensity, compression, laz]
+
+roleRelevance:
+  gis-analyst: 0.6
+  remote-sensing-specialist: 1.0
+  surveyor: 1.0
+  gis-developer: 0.7
+  3d-specialist: 1.0
+
+resources:
+  - title: "ASPRS LAS Specification"
+    url: "https://www.asprs.org/divisions-committees/lidar-division/laser-las-file-format-exchange-activities"
+    type: reference
+  - title: "LAZ Compression"
+    url: "https://laszip.org/"
+    type: documentation
+  - title: "PDAL - Point Data Abstraction Library"
+    url: "https://pdal.io/"
+    type: tool
+
+lastUpdated: "2026-04-07"

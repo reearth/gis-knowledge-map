@@ -1,0 +1,48 @@
+id: postgis
+title: PostGIS
+aliases: []
+
+type: spatial-databases
+parentNode: spatial-databases-group
+difficulty: intermediate
+importance: important
+
+summary: A spatial database extender for PostgreSQL that adds support for geographic objects.
+description: |
+  PostGIS extends PostgreSQL to handle geographic data, allowing location queries
+  to be run in SQL. It includes support for geographic objects, spatial indexing,
+  and numerous spatial functions for analysis.
+
+
+style:
+  color: "#A855F7"
+  icon: "database"
+
+relationships:
+  related:
+    - qgis
+    - gdal
+    - geoserver
+  enables:
+    - geojson
+    - shapefile
+    - mvt
+
+tags: [database, spatial, postgresql, backend]
+keywords: [PostGIS, PostgreSQL, spatial database, SQL]
+
+roleRelevance:
+  gis-analyst: 0.7
+  gis-developer: 1.0
+  cartographer: 0.3
+  data-engineer: 1.0
+
+resources:
+  - title: "PostGIS Documentation"
+    url: "https://postgis.net/documentation"
+    type: documentation
+  - title: "PostGIS in Action"
+    url: "https://www.manning.com/books/postgis-in-action"
+    type: reference
+
+lastUpdated: "2026-04-06"

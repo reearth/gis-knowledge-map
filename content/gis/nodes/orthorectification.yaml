@@ -1,0 +1,50 @@
+id: orthorectification
+title: Orthorectification
+aliases: [Geometric Correction, Orthophoto Processing]
+
+type: remote-sensing
+parentNode: remote-sensing-group
+difficulty: advanced
+importance: important
+
+summary: Correcting imagery for geometric distortions caused by terrain, sensor tilt, and camera perspective.
+description: |
+  Orthorectification is the process of geometrically correcting aerial or satellite imagery
+  to remove distortions caused by terrain relief, sensor orientation, and Earth curvature,
+  producing an orthophoto with uniform scale suitable for measurement.
+
+  Requires Digital Elevation Model (DEM) for terrain correction, camera calibration parameters,
+  and Ground Control Points (GCPs) for georeferencing. Process removes perspective distortion,
+  making imagery planimetrically correct. Essential for accurate mapping, change detection,
+  and integration with GIS layers. Tools: GDAL, ENVI, Pix4D, Agisoft Metashape.
+
+style:
+  color: "#0EA5E9"
+  icon: "scan"
+
+relationships:
+  prerequisites:
+    - aerial-imagery
+  related:
+    - georeferencing
+    - satellite-imagery
+  enables:
+    - geotiff
+
+tags: [remote-sensing, geometric-correction, orthophoto, photogrammetry, accuracy]
+keywords: [orthorectification, orthophoto, geometric-correction, dem, gcp, photogrammetry, distortion-removal]
+
+roleRelevance:
+  gis-analyst: 0.8
+  gis-developer: 0.7
+  data-engineer: 0.6
+
+resources:
+  - title: "Orthorectification Guide"
+    url: "https://www.l3harrisgeospatial.com/docs/orthorectification.html"
+    type: documentation
+  - title: "GDAL Orthorectification"
+    url: "https://gdal.org/programs/gdalwarp.html"
+    type: reference
+
+lastUpdated: "2026-04-07"

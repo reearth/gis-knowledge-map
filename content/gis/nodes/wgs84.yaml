@@ -1,0 +1,41 @@
+id: wgs84
+title: WGS84
+aliases: [WGS 1984, World Geodetic System 1984, EPSG:4326]
+
+type: spatial-reference-systems
+parentNode: spatial-reference-systems-group
+difficulty: intermediate
+importance: critical
+
+summary: The standard coordinate system used by GPS and most web mapping applications worldwide.
+description: |
+  WGS84 (World Geodetic System 1984) is the coordinate system used by GPS satellites and is the
+  de facto standard for latitude/longitude coordinates on Earth.
+
+  EPSG:4326 is the most common identifier for WGS84. Web Mercator (EPSG:3857) is a projection of WGS84
+  used by most web mapping applications like Google Maps, OpenStreetMap, and Leaflet.
+
+style:
+  color: "#10B981"
+  icon: "compass"
+
+relationships:
+  enables:
+    - geojson
+    - leaflet
+    - mapbox-gl
+
+tags: [gps, standard, latitude, longitude]
+keywords: [epsg4326, datum, geographic, web-mercator, epsg3857]
+
+roleRelevance:
+  gis-analyst: 1.0
+  gis-developer: 1.0
+  cartographer: 1.0
+
+resources:
+  - title: "EPSG:4326 - WGS84"
+    url: "https://epsg.io/4326"
+    type: reference
+
+lastUpdated: "2026-04-06"

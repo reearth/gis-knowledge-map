@@ -1,0 +1,50 @@
+id: vector-tiles
+title: Vector Tiles
+aliases: [PBF Tiles]
+
+type: tile-delivery-systems
+parentNode: tile-delivery-systems-group
+difficulty: intermediate
+importance: critical
+
+summary: Tiles containing vector geometry data for client-side rendering and dynamic styling.
+description: |
+  Vector tiles contain geometric and attribute data in a compact binary format (typically
+  Mapbox Vector Tile/MVT) for client-side rendering. Enable dynamic styling, smooth zooming,
+  rotation, and interactive features.
+
+  Significantly smaller than raster tiles, support runtime styling changes, language switching,
+  and high-DPI displays. Standard format: MVT (Mapbox Vector Tiles) in Protocol Buffers.
+  Supported by Mapbox GL, MapLibre, OpenLayers, and Leaflet (with plugins).
+
+style:
+  color: "#F59E0B"
+  icon: "vector-square"
+
+relationships:
+  prerequisites:
+    - xyz-tiles
+    - mvt
+  related:
+    - raster-tiles
+  enables:
+    - mapbox-gl
+    - deck-gl
+
+tags: [tiles, vector, mvt, client-rendering, dynamic-styling]
+keywords: [vector-tiles, mvt, pbf, protobuf, client-rendering, dynamic-maps]
+
+roleRelevance:
+  gis-developer: 1.0
+  gis-analyst: 0.5
+  cartographer: 0.9
+
+resources:
+  - title: "Mapbox Vector Tile Specification"
+    url: "https://github.com/mapbox/vector-tile-spec"
+    type: documentation
+  - title: "Vector Tiles Introduction"
+    url: "https://docs.mapbox.com/data/tilesets/guides/vector-tiles-introduction/"
+    type: tutorial
+
+lastUpdated: "2026-04-07"

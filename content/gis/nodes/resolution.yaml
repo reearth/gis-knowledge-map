@@ -1,0 +1,47 @@
+id: resolution
+title: Resolution
+aliases: []
+
+type: core-concepts
+parentNode: core-concepts-group
+difficulty: beginner
+importance: important
+
+summary: The level of detail or precision in spatial data, determining how much real-world detail can be captured and represented.
+description: |
+  The level of detail or precision in spatial data, determining how much real-world detail can be captured and represented. For raster data, resolution refers to cell size (e.g., 30m pixels). For vector data, it relates to coordinate precision and feature density. Higher resolution means more detail but larger file sizes.
+
+style:
+  color: "#64748B"
+  icon: "focus"
+
+relationships:
+  propertyOf:
+    - raster-data
+  affects:
+    - accuracy
+
+tags:
+  - data-quality
+  - precision
+  - detail
+keywords:
+  - resolution
+  - spatial resolution
+  - cell size
+  - pixel size
+  - detail level
+  - precision
+
+roleRelevance:
+  gis-analyst: 0.9
+  gis-developer: 0.8
+  cartographer: 0.9
+resources:
+  - title: Understanding Spatial Resolution
+    url: https://www.esri.com/en-us/what-is-gis/overview
+    type: documentation
+  - title: Raster Resolution Concepts
+    url: https://docs.qgis.org/latest/en/docs/
+    type: tutorial
+lastUpdated: "2026-04-07"

@@ -1,0 +1,76 @@
+id: line
+title: Line
+aliases: []
+
+type: data-models
+parentNode: data-models-group
+difficulty: beginner
+importance: critical
+
+summary: One-dimensional geometry representing linear features such as roads, rivers, pipelines, boundaries, or any feature with length but negligible width at map scale.
+description: |
+  A Line (also called LineString or Polyline) is a vector geometry type representing a connected
+  sequence of points forming a continuous path. Lines are used to model linear features like
+  roads, rivers, transmission lines, administrative boundaries, flight paths, or contour lines.
+
+  Lines are defined by an ordered set of vertices (points), with straight segments connecting
+  consecutive vertices. They have length and direction but no area. Lines can be simple (non-
+  self-intersecting) or complex, and can represent both physical features and abstract concepts
+  like boundaries or routes. MultiLineStrings allow representation of disconnected linear features
+  as a single entity.
+
+style:
+  color: "#8B5CF6"
+  icon: "minus"
+
+relationships:
+  partOf:
+    - vector-data
+  composedOf:
+    - point
+  requires:
+    - coordinate-systems
+  enables:
+    - polygon
+    - network-dataset
+  related:
+    - topology
+
+tags: [geometry, vector, linear, network]
+keywords: [line, linestring, polyline, road, river, boundary]
+
+roleRelevance:
+  gis-analyst: 0.9
+  cartographer: 0.85
+  remote-sensing-specialist: 0.6
+  urban-planner: 0.85
+  environmental-scientist: 0.75
+  gis-developer: 0.8
+
+resources:
+  - title: "OGC Simple Features - LineString Geometry"
+    url: "https://www.ogc.org/standards/sfa"
+    type: reference
+  - title: "QGIS Working with Line Data"
+    url: "https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_geometry.html"
+    type: documentation
+  - title: "ArcGIS Line Features"
+    url: "https://pro.arcgis.com/en/pro-app/latest/help/data/geodatabases/overview/feature-class-basics.htm"
+    type: documentation
+  - title: "Working with Line Geometry in GIS"
+    url: "https://www.qgistutorials.com/en/docs/digitizing_basics.html"
+    type: tutorial
+  - title: "Line Simplification and Generalization"
+    url: "https://docs.qgis.org/latest/en/docs/user_manual/processing_algs/qgis/vectorgeometry.html"
+    type: tutorial
+  - title: "Shapely LineString Operations"
+    url: "https://shapely.readthedocs.io/en/stable/manual.html#linestrings"
+    type: tool
+  - title: "PostGIS Line Functions"
+    url: "https://postgis.net/docs/reference.html#Geometry_Constructors"
+    type: tool
+  - title: "GDAL/OGR Line Processing"
+    url: "https://gdal.org/api/vector_c_api.html"
+    type: tool
+
+lastUpdated: "2026-04-07"

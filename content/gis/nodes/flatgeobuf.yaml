@@ -1,0 +1,54 @@
+id: flatgeobuf
+title: FlatGeobuf
+aliases: [FGB]
+
+type: data-formats
+parentNode: data-formats-group
+difficulty: intermediate
+importance: useful
+
+summary: A performant binary format for geographic data with a spatial index optimized for fast streaming.
+description: |
+  FlatGeobuf is a binary encoding format for geographic data that uses FlatBuffers for serialization.
+  It features a packed Hilbert R-tree spatial index, enabling efficient spatial filtering and streaming.
+
+  FlatGeobuf is designed for HTTP range request scenarios, making it ideal for cloud-native applications
+  where you need to query and render only a specific geographic area without downloading the entire dataset.
+  It's significantly faster than GeoJSON for large datasets while remaining relatively compact.
+
+style:
+  color: "#EC4899"
+  icon: "zap"
+
+relationships:
+  related:
+    - geojson
+    - mvt
+  usedBy:
+    - gdal
+    - qgis
+    - openlayers
+    - leaflet
+    - deck-gl
+
+tags: [vector, binary, streaming, performance, cloud]
+keywords: [flatbuffers, hilbert rtree, spatial index, http range requests, performance]
+
+roleRelevance:
+  gis-developer: 0.9
+  gis-analyst: 0.6
+  data-engineer: 0.8
+  web-mapping-specialist: 0.8
+
+resources:
+  - title: "FlatGeobuf Official Site"
+    url: "https://flatgeobuf.org/"
+    type: reference
+  - title: "FlatGeobuf GitHub Repository"
+    url: "https://github.com/flatgeobuf/flatgeobuf"
+    type: documentation
+  - title: "FlatGeobuf Specification"
+    url: "https://github.com/flatgeobuf/flatgeobuf/blob/master/doc/specification.md"
+    type: documentation
+
+lastUpdated: "2026-04-07"

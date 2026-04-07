@@ -1,0 +1,49 @@
+id: metadata
+title: Metadata
+aliases: []
+
+type: core-concepts
+parentNode: core-concepts-group
+difficulty: beginner
+importance: critical
+
+summary: Information about spatial data that describes its content, quality, condition, origin, and other characteristics.
+description: |
+  Information about spatial data that describes its content, quality, condition, origin, and other characteristics. Metadata includes details about data source, creation date, coordinate system, accuracy, update frequency, access constraints, and contact information, enabling proper data discovery, evaluation, and use.
+
+style:
+  color: "#64748B"
+  icon: "info"
+
+relationships:
+  describes:
+    - layer
+  includes:
+    - coordinate-reference-system
+  supports:
+    - data-quality
+
+tags:
+  - documentation
+  - data-quality
+  - standards
+keywords:
+  - metadata
+  - data documentation
+  - data catalog
+  - ISO 19115
+  - FGDC
+  - data lineage
+
+roleRelevance:
+  gis-analyst: 0.9
+  gis-developer: 0.8
+  cartographer: 0.7
+resources:
+  - title: Geospatial Metadata Standards
+    url: https://www.fgdc.gov/metadata
+    type: documentation
+  - title: ISO 19115 Metadata Standard
+    url: https://www.iso.org/standard/53798.html
+    type: reference
+lastUpdated: "2026-04-07"

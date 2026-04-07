@@ -1,0 +1,51 @@
+id: wmts
+title: WMTS
+aliases: [Web Map Tile Service, OGC WMTS]
+
+type: gis-servers-services
+parentNode: gis-servers-services-group
+difficulty: intermediate
+importance: important
+
+summary: OGC standard for serving pre-rendered or cached map tiles with fixed scale levels.
+description: |
+  Web Map Tile Service (WMTS) is an OGC standard for serving pre-rendered georeferenced
+  map tiles. More efficient than WMS for large-scale mapping because tiles are cached
+  and served at fixed scales rather than rendered on-demand.
+
+  Supports GetTile (retrieve tile), GetCapabilities (service metadata), and GetFeatureInfo
+  (optional). Defines tile matrix sets for different projections. Used for high-performance
+  basemaps and widely supported by GeoServer, MapServer, and web mapping clients.
+
+style:
+  color: "#F97316"
+  icon: "grid-3x3"
+
+relationships:
+  prerequisites:
+    - xyz-tiles
+  related:
+    - wms
+    - tms
+  enables:
+    - geoserver
+    - openlayers
+    - leaflet
+
+tags: [ogc, standard, web-service, tiles, caching]
+keywords: [wmts, tile-service, tile-matrix, getile, ogc-standard, cached-tiles]
+
+roleRelevance:
+  gis-developer: 0.9
+  data-engineer: 0.8
+  gis-analyst: 0.5
+
+resources:
+  - title: "OGC WMTS Specification"
+    url: "https://www.ogc.org/standards/wmts"
+    type: documentation
+  - title: "WMTS in GeoServer"
+    url: "https://docs.geoserver.org/latest/en/user/services/wmts/index.html"
+    type: reference
+
+lastUpdated: "2026-04-07"

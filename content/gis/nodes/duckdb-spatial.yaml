@@ -1,0 +1,47 @@
+id: duckdb-spatial
+title: DuckDB Spatial
+aliases: [DuckDB Spatial Extension]
+
+type: spatial-databases
+parentNode: spatial-databases-group
+difficulty: intermediate
+importance: important
+
+summary: DuckDB spatial extension for high-performance analytical queries on spatial data with OLAP capabilities.
+description: |
+  DuckDB Spatial extends DuckDB (an analytical in-process database) with spatial data support,
+  combining the performance of DuckDB's columnar storage with geospatial capabilities.
+  Optimized for analytical workloads rather than transactional operations.
+
+  Provides spatial types, functions based on GEOS, and native support for spatial file formats
+  (GeoParquet, FlatGeobuf, GeoJSON, Shapefile via GDAL). Extremely fast for spatial analytics,
+  aggregations, and joins on large datasets. Ideal for data science and analytical GIS workflows.
+
+style:
+  color: "#A855F7"
+  icon: "database"
+
+relationships:
+  related:
+    - geopandas
+    - flatgeobuf
+  enables:
+    - geojson
+
+tags: [database, analytical, olap, modern, performance]
+keywords: [duckdb, spatial-analytics, columnar-storage, geoparquet, olap, data-science]
+
+roleRelevance:
+  data-engineer: 1.0
+  gis-analyst: 0.8
+  gis-developer: 0.7
+
+resources:
+  - title: "DuckDB Spatial Extension"
+    url: "https://duckdb.org/docs/extensions/spatial"
+    type: documentation
+  - title: "DuckDB Spatial Examples"
+    url: "https://github.com/duckdb/duckdb_spatial"
+    type: reference
+
+lastUpdated: "2026-04-07"

@@ -1,0 +1,47 @@
+id: spatial-index
+title: Spatial Index
+aliases: []
+
+type: core-concepts
+parentNode: core-concepts-group
+difficulty: intermediate
+importance: important
+
+summary: A data structure that optimizes the performance of spatial queries and operations by organizing features based on their location.
+description: |
+  A data structure that optimizes the performance of spatial queries and operations by organizing features based on their location. Spatial indexes (such as R-trees, Quadtrees, or grid indexes) enable rapid filtering of features, dramatically improving query speed for large datasets.
+
+style:
+  color: "#64748B"
+  icon: "database"
+
+relationships:
+  optimizes:
+    - spatial-query
+  supports:
+    - spatial-analysis
+
+tags:
+  - performance
+  - database
+  - optimization
+keywords:
+  - spatial index
+  - R-tree
+  - quadtree
+  - query optimization
+  - performance
+  - indexing
+
+roleRelevance:
+  gis-analyst: 0.6
+  gis-developer: 1.0
+  cartographer: 0.6
+resources:
+  - title: Spatial Indexing Methods
+    url: https://postgis.net/documentation/
+    type: documentation
+  - title: Understanding Spatial Indexes
+    url: https://www.esri.com/en-us/what-is-gis/overview
+    type: tutorial
+lastUpdated: "2026-04-07"

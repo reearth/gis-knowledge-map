@@ -1,0 +1,44 @@
+id: qgis
+title: QGIS
+aliases: [Quantum GIS]
+
+type: desktop-gis-applications
+parentNode: desktop-gis-applications-group
+difficulty: beginner
+importance: important
+
+summary: A free and open-source desktop GIS application for viewing, editing, and analyzing geospatial data.
+description: |
+  QGIS is a professional GIS application that supports numerous vector, raster, and
+  database formats. It provides a wide range of spatial analysis tools and is
+  extensible via plugins.
+
+
+style:
+  color: "#3B82F6"
+  icon: "wrench"
+
+relationships:
+  related:
+    - postgis
+    - geojson
+    - gdal
+
+tags: [tool, desktop, open-source, analysis]
+keywords: [QGIS, desktop GIS, analysis, mapping]
+
+roleRelevance:
+  gis-analyst: 1.0
+  gis-developer: 0.7
+  cartographer: 0.9
+  data-engineer: 0.6
+
+resources:
+  - title: "QGIS Official Website"
+    url: "https://qgis.org"
+    type: tool
+  - title: "QGIS Documentation"
+    url: "https://docs.qgis.org"
+    type: documentation
+
+lastUpdated: "2026-04-06"

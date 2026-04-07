@@ -1,0 +1,154 @@
+# ============================================
+# OFFICIAL NODE TEMPLATE FOR GIS KNOWLEDGE MAP
+# ============================================
+# Use this template when creating new nodes.
+# Follow this structure EXACTLY to avoid validation errors.
+# ============================================
+
+# REQUIRED FIELDS (all must be present)
+id: example-node-id                    # kebab-case, unique identifier
+title: Example Node Title              # Human-readable title
+aliases: []                            # Array of alternative names (can be empty)
+
+# Node classification
+type: core-concepts                    # MUST be one of the 13 defined types (see below)
+parentNode: core-concepts-group        # Parent group this node belongs to
+difficulty: beginner                   # beginner | intermediate | advanced
+importance: critical                   # nice-to-know | useful | important | critical
+
+# Content (BOTH required)
+summary: A concise one-sentence description of this node (under 150 characters).
+description: |
+  A detailed multi-paragraph description of this concept, tool, or technology.
+
+  Use multiple paragraphs to explain:
+  - What it is
+  - Why it matters
+  - Key use cases
+  - Technical details
+
+# Visual styling (REQUIRED as nested object)
+style:
+  color: "#64748B"                     # Hex color for this node type
+  icon: "circle"                       # Lucide icon name (without 'Icon' suffix)
+
+# Relationships (OPTIONAL but recommended)
+# Structure: object with arrays of node IDs
+relationships:
+  prerequisites:                       # Nodes that should be learned first
+    - prerequisite-node-id
+  related:                            # Related/similar nodes
+    - related-node-id
+  enables:                            # Nodes this enables/unlocks
+    - enabled-node-id
+  usedBy:                             # Tools/nodes that use this
+    - user-node-id
+  partOf:                             # Larger concept this is part of
+    - parent-concept-id
+  basedOn:                            # Nodes this is built upon
+    - foundation-node-id
+
+# Metadata
+tags:                                  # Array of keyword tags
+  - tag1
+  - tag2
+  - tag3
+
+keywords:                              # Array of search keywords
+  - keyword1
+  - keyword2
+  - keyword3
+
+# Role relevance scores (0.0 to 1.0)
+roleRelevance:
+  gis-analyst: 0.8
+  gis-developer: 1.0
+  cartographer: 0.7
+  data-engineer: 0.9
+
+# External resources (MUST be array, not object)
+resources:
+  - title: "Official Documentation"
+    url: "https://example.com/docs"
+    type: documentation               # MUST be: reference | tutorial | documentation | video | tool
+  - title: "Tutorial Guide"
+    url: "https://example.com/tutorial"
+    type: tutorial
+  - title: "API Reference"
+    url: "https://example.com/api"
+    type: reference
+
+# Metadata
+lastUpdated: "2026-04-07"             # ISO date format
+
+# ============================================
+# VALID TYPE VALUES (must match exactly)
+# ============================================
+# - core-concepts
+# - spatial-reference-systems
+# - data-models
+# - data-formats
+# - processing-tools
+# - analysis-libraries
+# - gis-servers-services
+# - tile-delivery-systems
+# - web-mapping-libraries
+# - desktop-gis-applications
+# - spatial-databases
+# - cloud-gis-platforms
+# - remote-sensing
+
+# ============================================
+# VALID PARENT NODES (must match type)
+# ============================================
+# - core-concepts-group
+# - spatial-reference-systems-group
+# - data-models-group
+# - data-formats-group
+# - processing-tools-group
+# - analysis-libraries-group
+# - gis-servers-services-group
+# - tile-delivery-systems-group
+# - web-mapping-libraries-group
+# - desktop-gis-applications-group
+# - spatial-databases-group
+# - cloud-gis-platforms-group
+# - remote-sensing-group
+
+# ============================================
+# TYPE COLORS (use these exact values)
+# ============================================
+# core-concepts: "#64748B"
+# spatial-reference-systems: "#10B981"
+# data-models: "#8B5CF6"
+# data-formats: "#EC4899"
+# processing-tools: "#14B8A6"
+# analysis-libraries: "#06B6D4"
+# gis-servers-services: "#F97316"
+# tile-delivery-systems: "#F59E0B"
+# web-mapping-libraries: "#FB923C"
+# desktop-gis-applications: "#3B82F6"
+# spatial-databases: "#A855F7"
+# cloud-gis-platforms: "#C084FC"
+# remote-sensing: "#0EA5E9"
+
+# ============================================
+# COMMON MISTAKES TO AVOID
+# ============================================
+# ❌ DON'T: Put icon and color at top level
+# ✅ DO: Put them inside style: object
+#
+# ❌ DON'T: Use resources as nested object with categories
+# ✅ DO: Use resources as flat array
+#
+# ❌ DON'T: Use invalid resource types like "article", "guide", "repository"
+# ✅ DO: Use only: reference, tutorial, documentation, video, tool
+#
+# ❌ DON'T: Reference node IDs that don't exist
+# ✅ DO: Only reference existing node IDs in relationships
+#
+# ❌ DON'T: Forget the summary field
+# ✅ DO: Always include both summary AND description
+#
+# ❌ DON'T: Use mixed indentation (tabs + spaces)
+# ✅ DO: Use consistent 2-space indentation throughout

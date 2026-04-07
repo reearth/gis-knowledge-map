@@ -1,0 +1,44 @@
+id: data-models-group
+title: Data Models
+aliases: [Spatial Data Models, Geometry Types]
+
+type: data-models
+difficulty: intermediate
+importance: critical
+isGroup: true
+
+summary: Different ways to represent spatial features and phenomena in digital form.
+description: |
+  Data models define how geographic features and phenomena are represented in a GIS.
+  The two primary models are vector (discrete features like points, lines, polygons) and
+  raster (continuous fields in grids). Understanding these models is essential for choosing
+  the right format, performing appropriate analyses, and optimizing data storage.
+
+style:
+  color: "#8B5CF6"
+  icon: "shapes"
+
+relationships:
+  prerequisites:
+    - core-concepts-group
+    - spatial-reference-systems-group
+  enables:
+    - data-formats-group
+    - processing-tools-group
+    - analysis-libraries-group
+
+tags: [vector, raster, geometry, spatial-data]
+keywords: [point, line, polygon, grid, topology]
+
+roleRelevance:
+  gis-analyst: 1.0
+  gis-developer: 1.0
+  cartographer: 0.9
+  data-engineer: 1.0
+
+resources:
+  - title: "Vector vs Raster Data"
+    url: "https://gisgeography.com/spatial-data-types-vector-raster/"
+    type: tutorial
+
+lastUpdated: "2026-04-07"

@@ -1,0 +1,53 @@
+id: rasterio
+title: Rasterio
+aliases: [rasterio library]
+
+type: processing-tools
+parentNode: processing-tools-group
+difficulty: intermediate
+importance: important
+
+summary: Python library for reading and writing geospatial raster data, built on GDAL with a clean, Pythonic API.
+description: |
+  Rasterio is a Python library designed to make working with geospatial raster data more accessible
+  and intuitive. Built on top of GDAL, it provides a clean API that integrates well with NumPy
+  and other scientific Python libraries.
+
+  Rasterio simplifies common tasks like reading/writing raster datasets, reprojecting data,
+  masking and windowing operations, and working with Cloud Optimized GeoTIFFs (COGs). It's the
+  de-facto standard for raster processing in Python geospatial workflows.
+
+style:
+  color: "#14B8A6"
+  icon: "tools"
+
+relationships:
+  basedOn:
+    - gdal
+  supports:
+    - geotiff
+    - cog
+  integrates:
+    - numpy
+    - python
+  relatedTo:
+    - fiona
+    - geopandas
+
+tags: [python, raster, library, open-source]
+keywords: [raster processing, geotiff, python library, cog, numpy integration]
+
+roleRelevance:
+  gis-developer: 1.0
+  data-engineer: 0.9
+  remote-sensing-specialist: 0.9
+
+resources:
+  - title: "Rasterio Documentation"
+    url: "https://rasterio.readthedocs.io/"
+    type: documentation
+  - title: "Rasterio GitHub"
+    url: "https://github.com/rasterio/rasterio"
+    type: reference
+
+lastUpdated: "2026-04-07"

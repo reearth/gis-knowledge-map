@@ -1,0 +1,69 @@
+id: point
+title: Point
+aliases: []
+
+type: data-models
+parentNode: data-models-group
+difficulty: beginner
+importance: critical
+
+summary: Zero-dimensional geometry representing discrete locations in space, such as GPS coordinates, points of interest, city locations, or sensor positions.
+description: |
+  A Point is the most fundamental vector geometry type, representing a single location in space
+  defined by coordinates (X, Y, and optionally Z for elevation or M for measures). Points are
+  used to represent discrete features that don't have length or area at the map scale, such as
+  GPS waypoints, landmarks, cities on small-scale maps, sample locations, or sensor stations.
+
+  Points are stored as coordinate pairs/triplets and can carry attribute data describing the
+  feature they represent. They form the basis for more complex geometries and are essential
+  for geocoding, spatial analysis, and location-based services.
+
+style:
+  color: "#8B5CF6"
+  icon: "circle"
+
+relationships:
+  partOf:
+    - vector-data
+  requires:
+    - coordinate-systems
+  enables:
+    - line
+  related:
+    - point-cloud
+
+tags: [geometry, vector, coordinates, location]
+keywords: [point, location, coordinates, GPS, POI]
+
+roleRelevance:
+  gis-analyst: 0.9
+  cartographer: 0.85
+  remote-sensing-specialist: 0.7
+  urban-planner: 0.8
+  environmental-scientist: 0.75
+  gis-developer: 0.85
+
+resources:
+  - title: "OGC Simple Features - Point Geometry"
+    url: "https://www.ogc.org/standards/sfa"
+    type: reference
+  - title: "QGIS Working with Point Data"
+    url: "https://docs.qgis.org/latest/en/docs/user_manual/working_with_vector/vector_geometry.html"
+    type: documentation
+  - title: "ArcGIS Point Features"
+    url: "https://pro.arcgis.com/en/pro-app/latest/help/data/geodatabases/overview/feature-class-basics.htm"
+    type: documentation
+  - title: "Introduction to Point Data in GIS"
+    url: "https://www.qgistutorials.com/en/docs/working_with_attributes.html"
+    type: tutorial
+  - title: "Creating Point Layers from Coordinates"
+    url: "https://docs.qgis.org/latest/en/docs/user_manual/managing_data_source/create_layers.html"
+    type: tutorial
+  - title: "GeoPandas Point Geometry"
+    url: "https://geopandas.org/en/stable/docs/user_guide/geometric_manipulations.html"
+    type: tool
+  - title: "PostGIS Point Functions"
+    url: "https://postgis.net/docs/reference.html#Geometry_Constructors"
+    type: tool
+
+lastUpdated: "2026-04-07"

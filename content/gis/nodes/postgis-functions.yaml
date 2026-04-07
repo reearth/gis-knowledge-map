@@ -1,0 +1,49 @@
+id: postgis-functions
+title: PostGIS Functions
+aliases: [PostGIS SQL, Spatial SQL]
+
+type: analysis-libraries
+parentNode: analysis-libraries-group
+difficulty: advanced
+importance: critical
+
+summary: SQL functions for spatial analysis, geometric operations, and raster processing in PostGIS databases.
+description: |
+  PostGIS provides hundreds of spatial functions for performing geometric calculations,
+  spatial analysis, and raster processing directly in SQL. Functions are organized into
+  categories: measurement, relationships, processing, and raster operations.
+
+  Includes ST_Buffer, ST_Intersection, ST_Union, ST_Distance, ST_Contains, ST_Intersects,
+  and many more. Supports both vector (geometry) and raster operations, 3D geometries,
+  topology, and network routing. Enables powerful server-side spatial analysis.
+
+style:
+  color: "#06B6D4"
+  icon: "database"
+
+relationships:
+  prerequisites:
+    - postgis
+  related:
+    - shapely
+    - geopandas
+  enables:
+    - topology
+
+tags: [sql, spatial-functions, database, analysis, postgresql]
+keywords: [st-buffer, st-intersection, st-union, spatial-sql, raster-functions, topology]
+
+roleRelevance:
+  gis-developer: 1.0
+  gis-analyst: 0.8
+  data-engineer: 1.0
+
+resources:
+  - title: "PostGIS Function Reference"
+    url: "https://postgis.net/docs/reference.html"
+    type: reference
+  - title: "PostGIS Spatial Relationships"
+    url: "https://postgis.net/workshops/postgis-intro/spatial_relationships.html"
+    type: tutorial
+
+lastUpdated: "2026-04-07"

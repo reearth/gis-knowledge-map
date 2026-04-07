@@ -1,0 +1,43 @@
+id: analysis-libraries-group
+title: Analysis Libraries
+aliases: [Spatial Analysis Libraries, GIS Libraries]
+
+type: analysis-libraries
+difficulty: intermediate
+importance: important
+isGroup: true
+
+summary: Programming libraries for performing spatial analysis and geometric operations.
+description: |
+  Analysis libraries provide programmatic interfaces for performing spatial operations,
+  geometric calculations, and GIS analysis. Unlike processing tools (which are typically CLI),
+  these are code libraries used within applications. They include JavaScript libraries like
+  Turf.js for client-side analysis, Python libraries like Shapely and GeoPandas for
+  data science workflows, and database functions like PostGIS spatial functions.
+
+style:
+  color: "#06B6D4"
+  icon: "library"
+
+relationships:
+  prerequisites:
+    - data-models-group
+    - spatial-reference-systems-group
+  enables:
+    - web-mapping-libraries-group
+    - cloud-gis-platforms-group
+
+tags: [analysis, libraries, programming, spatial-operations]
+keywords: [turf, shapely, geopandas, jsts, postgis]
+
+roleRelevance:
+  gis-analyst: 0.6
+  gis-developer: 1.0
+  data-engineer: 0.9
+
+resources:
+  - title: "Turf.js Documentation"
+    url: "https://turfjs.org/"
+    type: documentation
+
+lastUpdated: "2026-04-07"

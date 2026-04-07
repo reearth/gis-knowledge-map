@@ -1,0 +1,54 @@
+id: czml
+title: CZML
+aliases: [Cesium Language]
+
+type: data-formats
+parentNode: data-formats-group
+difficulty: intermediate
+importance: useful
+
+summary: JSON schema for describing time-dynamic 3D scenes for Cesium virtual globe.
+description: |
+  CZML (Cesium Language) is a JSON schema for describing time-dynamic graphical scenes, primarily
+  for display in Cesium. It describes objects like points, lines, polygons, models, and their
+  properties over time.
+
+  CZML supports interpolation of positions and properties, making it ideal for visualizing moving
+  objects (vehicles, satellites, aircraft), animated data, and temporal geographic phenomena.
+  It can represent complex 4D (space + time) datasets in a compact, streamable format that's
+  optimized for web-based 3D visualization.
+
+style:
+  color: "#EC4899"
+  icon: "file-json"
+
+relationships:
+  related:
+    - geojson
+    - kml
+    - las-laz
+  usedBy:
+    - cesium
+    - deck-gl
+
+tags: [3d, time-dynamic, json, cesium]
+keywords: [cesium, 4d, animation, temporal, trajectory, satellite, interpolation]
+
+roleRelevance:
+  gis-developer: 0.8
+  cartographer: 0.5
+  3d-specialist: 0.9
+  data-engineer: 0.6
+
+resources:
+  - title: "CZML Guide"
+    url: "https://github.com/AnalyticalGraphicsInc/czml-writer/wiki/CZML-Guide"
+    type: reference
+  - title: "CZML Content Schema"
+    url: "https://github.com/AnalyticalGraphicsInc/czml-writer/wiki/CZML-Content"
+    type: documentation
+  - title: "Cesium CZML Documentation"
+    url: "https://cesium.com/learn/cesiumjs/ref-doc/CzmlDataSource.html"
+    type: documentation
+
+lastUpdated: "2026-04-07"

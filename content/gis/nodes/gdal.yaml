@@ -1,0 +1,49 @@
+id: gdal
+title: GDAL
+aliases: [Geospatial Data Abstraction Library, GDAL/OGR]
+
+type: processing-tools
+parentNode: processing-tools-group
+difficulty: advanced
+importance: critical
+
+summary: A translator library for raster and vector geospatial data formats, providing command-line utilities and APIs.
+description: |
+  GDAL (Geospatial Data Abstraction Library) is a computer software library for reading and writing
+  raster and vector geospatial data formats. It's used by most GIS software and is the de-facto
+  standard for geospatial data translation.
+
+  Includes command-line utilities like gdalwarp, gdal_translate, ogr2ogr, and more.
+
+style:
+  color: "#14B8A6"
+  icon: "terminal"
+
+relationships:
+  related:
+    - turf
+  enables:
+    - qgis
+    - postgis
+    - geoserver
+  usedBy:
+    - geotiff
+    - shapefile
+    - geojson
+    - kml
+    - mvt
+
+tags: [command-line, conversion, processing, open-source]
+keywords: [raster, vector, ogr, projection, reprojection, conversion]
+
+roleRelevance:
+  gis-developer: 1.0
+  gis-analyst: 0.9
+  data-engineer: 1.0
+
+resources:
+  - title: "GDAL Documentation"
+    url: "https://gdal.org/"
+    type: documentation
+
+lastUpdated: "2026-04-06"

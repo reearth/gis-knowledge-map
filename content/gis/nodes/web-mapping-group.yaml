@@ -1,0 +1,43 @@
+id: web-mapping-libraries-group
+title: Web Mapping Libraries
+aliases: [JavaScript Mapping Libraries, Client-Side Mapping]
+
+type: web-mapping-libraries
+difficulty: intermediate
+importance: critical
+isGroup: true
+
+summary: JavaScript libraries for rendering interactive maps in web browsers.
+description: |
+  Web mapping libraries are client-side JavaScript frameworks that render interactive
+  maps in web browsers. They handle map display, user interactions (pan/zoom), layer
+  management, and often integrate with tile servers and geospatial APIs. Popular libraries
+  include Leaflet (lightweight), OpenLayers (feature-rich), Mapbox GL JS (vector tiles),
+  Cesium (3D), and deck.gl (large datasets with WebGL).
+
+style:
+  color: "#FB923C"
+  icon: "globe"
+
+relationships:
+  prerequisites:
+    - data-formats-group
+    - tile-delivery-systems-group
+  enables:
+    - cloud-gis-platforms-group
+
+tags: [web, javascript, mapping, browser, client-side]
+keywords: [leaflet, openlayers, mapbox, cesium, deckgl]
+
+roleRelevance:
+  gis-analyst: 0.6
+  gis-developer: 1.0
+  cartographer: 0.8
+  data-engineer: 0.7
+
+resources:
+  - title: "Web Mapping Guide"
+    url: "https://www.axismaps.com/guide"
+    type: tutorial
+
+lastUpdated: "2026-04-07"

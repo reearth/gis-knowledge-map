@@ -1,0 +1,45 @@
+id: shapefile
+title: Shapefile
+aliases: [SHP, ESRI Shapefile]
+
+type: data-formats
+parentNode: data-formats-group
+difficulty: beginner
+importance: critical
+
+summary: A widely-used vector data format developed by ESRI for storing geometric location and attribute information.
+description: |
+  Shapefile is one of the most common geospatial vector data formats. Despite its name, a shapefile
+  is actually a collection of files (.shp, .shx, .dbf, and optionally .prj, .sbn, etc.) that work together.
+
+  It has limitations (2GB file size, 10-character field names, limited data types) but remains widely supported.
+
+style:
+  color: "#EC4899"
+  icon: "file"
+
+relationships:
+  related:
+    - geojson
+    - kml
+    - geotiff
+  usedBy:
+    - qgis
+    - postgis
+    - gdal
+    - geoserver
+    - felt
+
+tags: [vector, esri, legacy]
+keywords: [shp, dbf, feature, polygon, line, point]
+
+roleRelevance:
+  gis-analyst: 1.0
+  gis-developer: 0.9
+
+resources:
+  - title: "Shapefile Technical Description"
+    url: "https://www.esri.com/content/dam/esrisites/sitecore-archive/Files/Pdfs/library/whitepapers/pdfs/shapefile.pdf"
+    type: documentation
+
+lastUpdated: "2026-04-06"

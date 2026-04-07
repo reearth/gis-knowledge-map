@@ -1,0 +1,42 @@
+id: cloud-gis-platforms-group
+title: Cloud GIS Platforms
+aliases: [SaaS GIS, Cloud Mapping, Online GIS]
+
+type: cloud-gis-platforms
+difficulty: beginner
+importance: useful
+isGroup: true
+
+summary: Cloud-based platforms and SaaS services for creating, sharing, and collaborating on maps online.
+description: |
+  Cloud GIS platforms provide web-based environments for mapping and spatial analysis without
+  requiring local software installation. They emphasize ease of use, collaboration, and sharing.
+  These platforms are ideal for teams, non-technical users, and scenarios requiring quick
+  map creation and sharing without deep GIS expertise. Examples include Felt, ArcGIS Online,
+  CARTO, Google Earth Engine, Mapbox Platform, and kepler.gl.
+
+style:
+  color: "#C084FC"
+  icon: "cloud"
+
+relationships:
+  prerequisites:
+    - web-mapping-libraries-group
+    - data-formats-group
+  related:
+    - gis-servers-services-group
+
+tags: [cloud, saas, collaborative, web]
+keywords: [platform, online, sharing, collaboration, no-code]
+
+roleRelevance:
+  gis-analyst: 0.8
+  cartographer: 0.9
+  gis-developer: 0.4
+
+resources:
+  - title: "Cloud GIS Solutions Comparison"
+    url: "https://gisgeography.com/web-gis/"
+    type: reference
+
+lastUpdated: "2026-04-06"

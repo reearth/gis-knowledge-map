@@ -1,0 +1,48 @@
+id: spectral-analysis
+title: Spectral Analysis
+aliases: [Multispectral Analysis, Band Math, Spectral Indices]
+
+type: remote-sensing
+parentNode: remote-sensing-group
+difficulty: intermediate
+importance: critical
+
+summary: Analyzing electromagnetic spectrum bands to extract information about surface properties and materials.
+description: |
+  Spectral analysis examines how objects reflect/emit electromagnetic radiation across
+  different wavelengths (bands) to identify materials, vegetation health, water quality,
+  and other surface properties. Foundation of remote sensing interpretation.
+
+  Techniques include band ratios and indices (NDVI for vegetation, NDWI for water, NDBI
+  for built-up areas), spectral signatures (unique reflectance patterns), principal component
+  analysis (PCA), and tasseled cap transformation. Multispectral (3-15 bands) vs hyperspectral
+  (100+ bands). Essential for vegetation monitoring, geology, and environmental analysis.
+
+style:
+  color: "#0EA5E9"
+  icon: "chart-area"
+
+relationships:
+  prerequisites:
+    - satellite-imagery
+  related:
+    - image-classification
+    - google-earth-engine
+
+tags: [remote-sensing, multispectral, indices, ndvi, analysis, bands]
+keywords: [spectral-analysis, ndvi, band-ratios, multispectral, hyperspectral, reflectance, vegetation-indices]
+
+roleRelevance:
+  gis-analyst: 1.0
+  data-engineer: 0.6
+  gis-developer: 0.7
+
+resources:
+  - title: "Spectral Indices in Earth Engine"
+    url: "https://developers.google.com/earth-engine/tutorials/community/spectral-indices-app"
+    type: tutorial
+  - title: "Index Database (IDB)"
+    url: "https://www.indexdatabase.de/"
+    type: reference
+
+lastUpdated: "2026-04-07"

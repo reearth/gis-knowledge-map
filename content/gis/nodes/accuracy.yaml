@@ -1,0 +1,51 @@
+id: accuracy
+title: Accuracy
+aliases: []
+
+type: core-concepts
+parentNode: core-concepts-group
+difficulty: beginner
+importance: critical
+
+summary: How close measurements or values in spatial data are to their true or accepted reference values.
+description: |
+  How close measurements or values in spatial data are to their true or accepted reference values. Accuracy encompasses both positional accuracy (how close feature locations are to actual positions) and attribute accuracy (correctness of descriptive data). It is distinct from precision, which refers to measurement repeatability.
+
+style:
+  color: "#64748B"
+  icon: "target"
+
+relationships:
+  measureOf:
+    - data-quality
+  documentedIn:
+    - metadata
+  affectedBy:
+    - georeferencing
+  related:
+    - resolution
+
+tags:
+  - data-quality
+  - uncertainty
+  - validation
+keywords:
+  - accuracy
+  - positional accuracy
+  - attribute accuracy
+  - error
+  - uncertainty
+  - data quality
+
+roleRelevance:
+  gis-analyst: 1.0
+  gis-developer: 0.8
+  cartographer: 0.8
+resources:
+  - title: Spatial Data Accuracy Standards
+    url: https://www.fgdc.gov/standards/projects/accuracy
+    type: documentation
+  - title: Understanding GIS Data Accuracy
+    url: https://www.esri.com/en-us/what-is-gis/overview
+    type: tutorial
+lastUpdated: "2026-04-07"

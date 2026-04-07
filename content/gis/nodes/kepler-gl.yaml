@@ -1,0 +1,50 @@
+id: kepler-gl
+title: Kepler.gl
+aliases: [Kepler, Uber Kepler]
+
+type: cloud-gis-platforms
+parentNode: cloud-gis-platforms-group
+difficulty: beginner
+importance: important
+
+summary: Uber's open-source geospatial analysis tool for visualizing and exploring large-scale location datasets.
+description: |
+  Kepler.gl is a powerful open-source geospatial analysis tool for large-scale datasets,
+  originally developed by Uber's Visualization team. Provides a browser-based interface
+  for creating rich, interactive visualizations without coding.
+
+  Handles millions of points with GPU-accelerated rendering (deck.gl), supports various
+  data formats (CSV, GeoJSON, KML), offers multiple visualization types (heatmaps, arcs,
+  3D buildings, trips), and includes filtering, aggregation, and time-series animation.
+  Available as web app, React component, or Jupyter widget.
+
+style:
+  color: "#C084FC"
+  icon: "chart-line"
+
+relationships:
+  prerequisites:
+    - deck-gl
+  related:
+    - carto
+    - felt
+  enables:
+    - geojson
+
+tags: [visualization, open-source, big-data, gpu-rendering, uber]
+keywords: [kepler-gl, geospatial-visualization, deck-gl, large-datasets, time-series, heatmap]
+
+roleRelevance:
+  gis-analyst: 1.0
+  data-engineer: 0.8
+  gis-developer: 0.7
+
+resources:
+  - title: "Kepler.gl Website"
+    url: "https://kepler.gl/"
+    type: tool
+  - title: "Kepler.gl Documentation"
+    url: "https://docs.kepler.gl/"
+    type: documentation
+
+lastUpdated: "2026-04-07"

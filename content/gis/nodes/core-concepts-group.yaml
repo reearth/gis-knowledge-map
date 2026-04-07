@@ -1,0 +1,41 @@
+id: core-concepts-group
+title: Core Concepts
+aliases: [GIS Fundamentals, Basic Concepts]
+
+type: core-concepts
+difficulty: beginner
+importance: critical
+isGroup: true
+
+summary: Fundamental concepts that form the foundation of GIS and spatial data analysis.
+description: |
+  Core concepts represent the essential building blocks of Geographic Information Systems.
+  These foundational ideas are critical for understanding how spatial data is represented,
+  stored, analyzed, and visualized. Mastering these concepts is necessary before diving
+  into specific tools, formats, or workflows.
+
+style:
+  color: "#64748B"
+  icon: "lightbulb"
+
+relationships:
+  enables:
+    - spatial-reference-systems-group
+    - data-models-group
+    - data-formats-group
+
+tags: [fundamentals, concepts, foundation]
+keywords: [basics, essential, core, foundational]
+
+roleRelevance:
+  gis-analyst: 1.0
+  gis-developer: 1.0
+  cartographer: 1.0
+  data-engineer: 1.0
+
+resources:
+  - title: "Introduction to GIS"
+    url: "https://www.esri.com/en-us/what-is-gis/overview"
+    type: reference
+
+lastUpdated: "2026-04-07"

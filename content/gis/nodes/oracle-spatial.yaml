@@ -1,0 +1,48 @@
+id: oracle-spatial
+title: Oracle Spatial
+aliases: [Oracle Locator, Oracle Spatial and Graph]
+
+type: spatial-databases
+parentNode: spatial-databases-group
+difficulty: advanced
+importance: important
+
+summary: Oracle Database's enterprise spatial extension for storing, indexing, and analyzing geographic data.
+description: |
+  Oracle Spatial and Graph extends Oracle Database with advanced spatial data types,
+  indexing, and analysis capabilities. Part of Oracle Database since version 8i,
+  it provides enterprise-grade spatial database functionality.
+
+  Supports 2D/3D geometries, topology, network analysis, spatial indexing (R-Tree, Quadtree),
+  coordinate systems, and hundreds of spatial operators and functions. Includes GeoRaster
+  for raster data. Used in large enterprise deployments requiring scalability and reliability.
+
+style:
+  color: "#A855F7"
+  icon: "database"
+
+relationships:
+  related:
+    - postgis
+    - arcgis-server
+  enables:
+    - shapefile
+    - geojson
+
+tags: [database, commercial, enterprise, oracle, spatial]
+keywords: [oracle-spatial, enterprise-gis, topology, network-analysis, georaster, spatial-indexing]
+
+roleRelevance:
+  data-engineer: 1.0
+  gis-developer: 0.8
+  gis-analyst: 0.5
+
+resources:
+  - title: "Oracle Spatial Documentation"
+    url: "https://docs.oracle.com/en/database/oracle/oracle-database/19/spatl/"
+    type: documentation
+  - title: "Oracle Spatial Developer's Guide"
+    url: "https://docs.oracle.com/en/database/oracle/oracle-database/19/spatl/spatial-concepts.html"
+    type: reference
+
+lastUpdated: "2026-04-07"

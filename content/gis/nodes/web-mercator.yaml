@@ -1,0 +1,130 @@
+id: web-mercator
+title: Web Mercator (EPSG:3857)
+aliases: []
+
+type: spatial-reference-systems
+parentNode: spatial-reference-systems-group
+difficulty: intermediate
+importance: critical
+estimatedTime: 35 minutes
+
+summary: Web Mercator (EPSG:3857) is a variant of the Mercator projection that has become the de facto standard for web mapping.
+description: >
+  Web Mercator (EPSG:3857) is a variant of the Mercator projection that has become the de facto standard for web mapping. Used by Google Maps, OpenStreetMap, Bing Maps, and most web mapping libraries, it treats Earth as a sphere (not ellipsoid) for simpler tile calculations. While geometrically imprecise and severely distorting areas near poles, its ubiquity and tile-friendly properties make it essential for web-based GIS applications.
+
+style:
+  color: "#10B981"
+  icon: "globe"
+
+topics:
+  - Web Mercator vs traditional Mercator differences
+  - Spherical projection (simplified WGS84 ellipsoid to sphere)
+  - EPSG:3857 vs EPSG:3785 vs EPSG:900913
+  - Tile pyramid structure (zoom levels 0-22+)
+  - Latitude limits (approximately ±85.05°)
+  - Area distortion characteristics
+  - Web mapping standards (XYZ tiles, WMTS)
+
+prerequisites:
+  - crs
+  - map-projection
+  - wgs84
+  - coordinate-systems
+
+relationships:
+  related:
+    - wgs84
+    - map-projection
+    - epsg-codes
+  basedOn:
+    - wgs84
+
+learningOutcomes:
+  - Understand why Web Mercator dominates web mapping
+  - Recognize Web Mercator's limitations and distortions
+  - Convert between WGS84 (EPSG:4326) and Web Mercator (EPSG:3857)
+  - Work with Web Mercator in mapping libraries (Leaflet, Mapbox, OpenLayers)
+  - Know when NOT to use Web Mercator
+
+roleRelevance:
+  gis-developer: 1.0
+  web-developer: 0.9
+  gis-analyst: 0.8
+  cartographer: 0.8
+  geospatial-data-scientist: 0.7
+
+resources:
+  - title: "EPSG:3857 - Web Mercator"
+    url: "https://epsg.io/3857"
+    type: reference
+  - title: "Web Mercator - PROJ"
+    url: "https://proj.org/operations/projections/webmerc.html"
+    type: reference
+  - title: "Slippy Map Tilenames - OSM Wiki"
+    url: "https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames"
+    type: documentation
+  - title: "Web Mercator: Non-Conformal, Non-Mercator"
+    url: "https://alastaira.wordpress.com/2011/01/23/the-google-maps-bing-maps-spherical-mercator-projection/"
+    type: tutorial
+  - title: "Why Web Mercator?"
+    url: "https://www.esri.com/arcgis-blog/products/arcgis-online/mapping/web-mercator-will-it-ever-go-away/"
+    type: tutorial
+  - title: "Web Mercator Explained"
+    url: "https://www.youtube.com/watch?v=vVX-PrBRtTY"
+    type: video
+
+practicalExercises:
+  - Display a WGS84 dataset on a Web Mercator basemap
+  - Calculate area measurements and compare with equal-area projection
+  - Convert between EPSG:4326 and EPSG:3857 programmatically
+  - Implement tile coordinate conversion (lat/lon to tile x/y/z)
+  - Visualize area distortion at different latitudes
+
+commonMistakes:
+  - Using Web Mercator for area calculations (massive distortion)
+  - Not reprojecting data from EPSG:4326 to EPSG:3857 for web display
+  - Assuming Web Mercator is accurate for analysis
+  - Displaying polar or high-latitude data (>85°) in Web Mercator
+  - Confusing Web Mercator with true Mercator projection
+
+realWorldApplications:
+  - Google Maps, OpenStreetMap, Bing Maps base layers
+  - Web mapping libraries (Leaflet, Mapbox GL JS, OpenLayers)
+  - Mobile mapping applications
+  - Web-based GIS dashboards and applications
+  - Real-time location tracking and visualization
+
+technicalDetails:
+  epsgCode: "3857"
+  alternativeCodes: "EPSG:3785 (deprecated), EPSG:900913 (unofficial)"
+  basedOn: "Spherical Mercator (WGS84 datum treated as sphere)"
+  units: "meters"
+  latitudeLimits: "±85.0511287798°"
+  falseEasting: "0"
+  falseNorthing: "0"
+  tileScheme: "XYZ (zoom/x/y), 256×256 or 512×512 pixel tiles"
+
+advantages:
+  - Universal adoption in web mapping ecosystem
+  - Simple tile pyramid structure for efficient caching
+  - Fast client-side coordinate transformations
+  - Preserves angles (locally conformal)
+  - Square tiles at all zoom levels
+
+disadvantages:
+  - Severe area distortion (Greenland appears larger than Africa)
+  - Not suitable for polar regions (>85° latitude)
+  - Not a proper ellipsoidal projection (uses sphere)
+  - Inappropriate for area-based analysis
+  - Not recognized by some official mapping agencies
+
+tags:
+  - web-mapping
+  - mercator
+  - epsg-3857
+  - tiles
+  - google-maps
+  - openstreetmap
+  - spherical-projection
+
+lastUpdated: "2026-04-07"

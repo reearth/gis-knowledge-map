@@ -1,0 +1,50 @@
+id: d3-geo
+title: D3-Geo
+aliases: [D3.js Geo, D3 Geographic]
+
+type: web-mapping-libraries
+parentNode: web-mapping-libraries-group
+difficulty: advanced
+importance: important
+
+summary: D3.js geospatial module for custom map projections, cartographic visualizations, and geographic data manipulation.
+description: |
+  D3-Geo is the geographic projection system within D3.js, providing powerful tools for
+  creating custom cartographic visualizations. Offers extensive projection support, path
+  generation, and geospatial data transformation capabilities.
+
+  Includes 20+ projection types (Mercator, Albers, orthographic, etc.), custom projection
+  definitions, graticule generation, and geographic path rendering. Ideal for thematic maps,
+  statistical cartography, and data-driven geographic visualizations. Requires more coding
+  than standard web mapping libraries but offers unmatched flexibility.
+
+style:
+  color: "#FB923C"
+  icon: "globe"
+
+relationships:
+  prerequisites:
+    - geojson
+  related:
+    - deck-gl
+    - leaflet
+  enables:
+    - geojson
+
+tags: [javascript, d3, visualization, projections, cartography]
+keywords: [d3-geo, projections, cartography, data-visualization, custom-maps, graticule]
+
+roleRelevance:
+  gis-developer: 0.8
+  cartographer: 1.0
+  data-engineer: 0.6
+
+resources:
+  - title: "D3-Geo Documentation"
+    url: "https://d3js.org/d3-geo"
+    type: documentation
+  - title: "D3-Geo Projection Examples"
+    url: "https://observablehq.com/@d3/gallery#maps"
+    type: tutorial
+
+lastUpdated: "2026-04-07"

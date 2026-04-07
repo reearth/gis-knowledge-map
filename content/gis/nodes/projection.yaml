@@ -1,0 +1,120 @@
+id: map-projection
+title: Map Projection
+aliases: []
+
+type: spatial-reference-systems
+parentNode: spatial-reference-systems-group
+difficulty: intermediate
+importance: critical
+estimatedTime: 60 minutes
+
+summary: Map projection is the mathematical transformation that converts locations from Earth's curved 3D surface (ellipsoid) to a flat 2D map.
+description: >
+  Map projection is the mathematical transformation that converts locations from Earth's curved 3D surface (ellipsoid) to a flat 2D map. All projections introduce distortions in area, shape, distance, or direction. Understanding projection properties and trade-offs is essential for selecting the right projection for your mapping purpose and minimizing distortion in your area of interest.
+
+style:
+  color: "#10B981"
+  icon: "map"
+
+topics:
+  - Projection classes (cylindrical, conic, azimuthal)
+  - Projection properties (conformal, equal-area, equidistant, azimuthal)
+  - Common projections (Mercator, Transverse Mercator, Lambert, Albers)
+  - Projection distortion patterns and Tissot's indicatrix
+  - Standard lines (parallels, meridians)
+  - Projection parameters (false easting/northing, central meridian, scale factor)
+
+prerequisites:
+  - basic-gis-concepts
+  - coordinate-systems
+  - crs
+  - datum
+
+relationships:
+  related:
+    - utm
+    - web-mercator
+    - epsg-codes
+    - reprojection
+
+learningOutcomes:
+  - Classify projections by their geometric construction
+  - Identify which properties are preserved in different projections
+  - Select appropriate projections based on purpose and region
+  - Recognize and minimize projection-induced distortions
+  - Configure projection parameters for custom use cases
+
+roleRelevance:
+  cartographer: 1.0
+  gis-analyst: 0.9
+  gis-developer: 0.9
+  geospatial-data-scientist: 0.8
+  remote-sensing-specialist: 0.7
+
+resources:
+  - title: "Map Projections - PROJ"
+    url: "https://proj.org/operations/projections/index.html"
+    type: reference
+  - title: "Map Projections - USGS"
+    url: "https://pubs.usgs.gov/pp/1453/report.pdf"
+    type: reference
+  - title: "QGIS Projections Documentation"
+    url: "https://docs.qgis.org/latest/en/docs/user_manual/working_with_projections/working_with_projections.html"
+    type: documentation
+  - title: "Choosing the Right Map Projection"
+    url: "https://source.opennews.org/articles/choosing-right-map-projection/"
+    type: tutorial
+  - title: "Understanding Map Projections - Esri"
+    url: "https://learn.arcgis.com/en/projects/choose-the-right-projection/"
+    type: tutorial
+  - title: "Map Projections Explained"
+    url: "https://www.youtube.com/watch?v=kIID5FDi2JQ"
+    type: video
+  - title: "Why All World Maps Are Wrong"
+    url: "https://www.youtube.com/watch?v=kIID5FDi2JQ"
+    type: video
+  - title: "Projection Wizard"
+    url: "https://projectionwizard.org/"
+    type: tool
+  - title: "Map Projection Transitions"
+    url: "https://www.jasondavies.com/maps/transition/"
+    type: tool
+
+practicalExercises:
+  - Compare area distortion in Mercator vs equal-area projections
+  - Project a dataset to UTM for accurate distance measurements
+  - Create a custom projection centered on your region of interest
+  - Visualize Tissot's indicatrix to understand distortion patterns
+  - Choose optimal projections for different mapping scenarios (thematic, navigation, analysis)
+
+commonMistakes:
+  - Using Web Mercator for area calculations or non-web mapping
+  - Applying global projections to local data
+  - Not considering projection distortion in spatial analysis
+  - Confusing projection with datum
+  - Using unprojected (geographic) coordinates for distance/area calculations
+
+realWorldApplications:
+  - Topographic maps using UTM or national grid projections
+  - Web maps standardizing on Web Mercator
+  - Thematic maps using equal-area projections for accurate comparisons
+  - Navigation charts using conformal projections
+  - Polar mapping using azimuthal projections
+
+advancedTopics:
+  - Custom projection design for specific regions
+  - Projection of raster data and resampling methods
+  - Projection-induced uncertainty in spatial analysis
+  - Adaptive composite map projections
+  - Historical projection methods and artifacts
+
+tags:
+  - cartography
+  - coordinate-transformation
+  - mercator
+  - utm
+  - distortion
+  - conformal
+  - equal-area
+
+lastUpdated: "2026-04-07"

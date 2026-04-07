@@ -1,0 +1,45 @@
+id: mvt
+title: Mapbox Vector Tiles
+aliases: [MVT, PBF, Protocol Buffers]
+
+type: tile-delivery-systems
+parentNode: tile-delivery-systems-group
+difficulty: intermediate
+importance: important
+
+summary: A specification for encoding tiled vector data using Google Protocol Buffers for efficient web map rendering.
+description: |
+  Mapbox Vector Tiles (MVT) is an open standard for representing geospatial vector data in tiles.
+  Unlike raster tiles, vector tiles contain the actual geographic features (points, lines, polygons)
+  which allows for dynamic styling, querying, and better resolution independence.
+
+  Uses Protocol Buffers for compact, efficient encoding. Widely adopted by Mapbox, OpenMapTiles, and others.
+
+style:
+  color: "#F59E0B"
+  icon: "grid-3x3"
+
+relationships:
+  related:
+    - geojson
+  enables:
+    - mapbox-gl
+    - openlayers
+    - leaflet
+
+tags: [vector, tiles, protocol-buffers, web]
+keywords: [pbf, tiling, zoom-levels, styling]
+
+roleRelevance:
+  gis-developer: 1.0
+  gis-analyst: 0.6
+
+resources:
+  - title: "Mapbox Vector Tile Specification"
+    url: "https://github.com/mapbox/vector-tile-spec"
+    type: documentation
+  - title: "MVT at scale"
+    url: "https://docs.mapbox.com/data/tilesets/guides/vector-tiles-introduction/"
+    type: reference
+
+lastUpdated: "2026-04-06"

@@ -1,0 +1,53 @@
+id: tippecanoe
+title: Tippecanoe
+aliases: [Mapbox Tippecanoe]
+
+type: processing-tools
+parentNode: processing-tools-group
+difficulty: intermediate
+importance: useful
+
+summary: Command-line tool for building optimized vector tilesets from large GeoJSON, FlatGeobuf, and CSV datasets.
+description: |
+  Tippecanoe is a Mapbox-developed tool for creating vector tile pyramids (Mapbox Vector Tiles/MVT)
+  from large geographic datasets. It excels at handling massive datasets by intelligently simplifying
+  geometries, dropping features, and managing detail levels across zoom ranges.
+
+  The tool performs sophisticated optimizations including feature coalescing, attribute filtering,
+  and dynamic simplification to create efficient, visually appealing tilesets. It's essential for
+  preparing large-scale vector data for web mapping applications using Mapbox GL or MapLibre.
+
+style:
+  color: "#14B8A6"
+  icon: "wrench"
+
+relationships:
+  produces:
+    - mvt
+    - mbtiles
+  consumes:
+    - geojson
+    - csv
+  usedWith:
+    - mapbox-gl
+    - maplibre
+  developedBy:
+    - mapbox
+
+tags: [vector-tiles, command-line, optimization, open-source]
+keywords: [vector tiles, mvt, mbtiles, tileset generation, tile optimization, simplification]
+
+roleRelevance:
+  gis-developer: 0.9
+  data-engineer: 0.8
+  web-developer: 0.7
+
+resources:
+  - title: "Tippecanoe Documentation"
+    url: "https://github.com/mapbox/tippecanoe"
+    type: documentation
+  - title: "Tippecanoe GitHub"
+    url: "https://github.com/mapbox/tippecanoe"
+    type: reference
+
+lastUpdated: "2026-04-07"

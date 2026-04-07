@@ -1,0 +1,45 @@
+id: felt
+title: Felt
+aliases: [Felt Maps]
+
+type: cloud-gis-platforms
+parentNode: cloud-gis-platforms-group
+difficulty: beginner
+importance: useful
+
+summary: A collaborative web-based mapping platform for creating, sharing, and discussing maps in real-time.
+description: |
+  Felt is a modern, collaborative mapping tool that makes it easy to create and share maps with teams.
+  Features real-time collaboration, simple data import (drag-and-drop), annotation tools, and sharing capabilities.
+
+  Designed for teams and non-technical users, making GIS accessible without requiring deep technical knowledge.
+  Supports various data formats and provides intuitive styling and visualization options.
+
+style:
+  color: "#C084FC"
+  icon: "users"
+
+relationships:
+  related:
+    - leaflet
+  enables:
+    - geojson
+    - shapefile
+
+tags: [collaborative, web, saas, no-code]
+keywords: [collaboration, real-time, sharing, annotation, team]
+
+roleRelevance:
+  gis-analyst: 0.9
+  gis-developer: 0.4
+  cartographer: 0.8
+
+resources:
+  - title: "Felt Homepage"
+    url: "https://felt.com/"
+    type: tool
+  - title: "Felt Documentation"
+    url: "https://feltmaps.notion.site/"
+    type: documentation
+
+lastUpdated: "2026-04-06"
