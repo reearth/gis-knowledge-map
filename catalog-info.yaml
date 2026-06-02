@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: gis-knowledge-map
+  namespace: reearth
+  description: An interactive knowledge graph visualization of Geographic Information
+    Systems concepts, tools, and technologies.
+  annotations:
+    github.com/project-slug: reearth/gis-knowledge-map
+  links:
+  - url: https://github.com/reearth/gis-knowledge-map
+    title: GitHub
+    icon: github
+  tags:
+  - typescript
+spec:
+  type: service
+  lifecycle: production
+  owner: reearth/sre
